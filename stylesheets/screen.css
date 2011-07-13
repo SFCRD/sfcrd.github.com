@@ -168,6 +168,11 @@ header nav:hover table {
 }
 
 /* line 2, ../_sass/styles/_post.sass */
+body, html {
+  background: #556270;
+}
+
+/* line 5, ../_sass/styles/_post.sass */
 article[role='post'] {
   font-size: 14px;
   padding-top: 40px;
@@ -176,13 +181,13 @@ article[role='post'] {
   color: #fefffe;
   text-shadow: #262b32 0 1px 3px;
 }
-/* line 6, ../_sass/styles/_post.sass */
+/* line 9, ../_sass/styles/_post.sass */
 article[role='post'] h1 {
   font-size: 144px;
   font-weight: bold;
   margin-left: -10px;
 }
-/* line 11, ../_sass/styles/_post.sass */
+/* line 14, ../_sass/styles/_post.sass */
 article[role='post'] h2, article[role='post'] h3, article[role='post'] h4, article[role='post'] h5, article[role='post'] h6 {
   font-size: 18px;
   line-height: 25px;
@@ -190,15 +195,15 @@ article[role='post'] h2, article[role='post'] h3, article[role='post'] h4, artic
   margin-top: 25px;
   margin-bottom: 10px;
 }
-/* line 25, ../_sass/styles/_post.sass */
+/* line 28, ../_sass/styles/_post.sass */
 article[role='post'] ul li, article[role='post'] p {
   line-height: 25px;
 }
-/* line 28, ../_sass/styles/_post.sass */
+/* line 31, ../_sass/styles/_post.sass */
 article[role='post'] ul {
   list-style: disc;
 }
-/* line 31, ../_sass/styles/_post.sass */
+/* line 34, ../_sass/styles/_post.sass */
 article[role='post'] a {
   color: #c7f464;
 }

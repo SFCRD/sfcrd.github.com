@@ -1,0 +1,31 @@
+<nav>
+	<div class="wrapper">
+		<h2>
+			Menu
+		</h2>
+		<table cellspacing="0">
+			<thead>
+				<th>
+					<td></td>
+					<td></td>
+					<td></td>
+				</th>
+			</thead>
+			<tbody>
+				{% for post in site.posts %}
+				<tr>
+					<td>
+						<a href="{{ post.url }}">{{ post.title }}</a>
+					</td>
+					<td>
+						{{ post.date | date: '%A, %B %d, %Y' }}
+					</td>
+					<td>
+						Authors
+					</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+</nav>
