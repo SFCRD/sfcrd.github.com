@@ -1,3 +1,7 @@
+---
+layout: post
+
+---
 # New-School HTML
 
 Introduce new-school HTML to people and make it approachable.
