@@ -68,316 +68,6 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 1, ../_sass/styles/_pygments.sass */
-.hll {
-  background-color: #ffffcc;
-}
-
-/* line 4, ../_sass/styles/_pygments.sass */
-.c {
-  color: #8f5902;
-  font-style: italic;
-}
-
-/* Comment */
-/* line 10, ../_sass/styles/_pygments.sass */
-.err {
-  color: #a40000;
-  border: 1px solid #ef2929;
-}
-
-/* Error */
-/* line 16, ../_sass/styles/_pygments.sass */
-.g {
-  color: black;
-}
-
-/* Generic */
-/* line 21, ../_sass/styles/_pygments.sass */
-.k {
-  color: #204a87;
-  font-weight: bold;
-}
-
-/* Keyword */
-/* line 27, ../_sass/styles/_pygments.sass */
-.l, .n {
-  color: black;
-}
-
-/* Literal */
-/* Name */
-/* line 33, ../_sass/styles/_pygments.sass */
-.o {
-  color: #ce5c00;
-  font-weight: bold;
-}
-
-/* Operator */
-/* line 39, ../_sass/styles/_pygments.sass */
-.x {
-  color: black;
-}
-
-/* Other */
-/* line 44, ../_sass/styles/_pygments.sass */
-.p {
-  color: black;
-  font-weight: bold;
-}
-
-/* Punctuation */
-/* line 50, ../_sass/styles/_pygments.sass */
-.cm, .cp, .c1, .cs {
-  color: #8f5902;
-  font-style: italic;
-}
-
-/* Comment.Multiline */
-/* Comment.Preproc */
-/* Comment.Single */
-/* Comment.Special */
-/* line 59, ../_sass/styles/_pygments.sass */
-.gd {
-  color: #a40000;
-}
-
-/* Generic.Deleted */
-/* line 64, ../_sass/styles/_pygments.sass */
-.ge {
-  color: black;
-  font-style: italic;
-}
-
-/* Generic.Emph */
-/* line 70, ../_sass/styles/_pygments.sass */
-.gr {
-  color: #ef2929;
-}
-
-/* Generic.Error */
-/* line 75, ../_sass/styles/_pygments.sass */
-.gh {
-  color: navy;
-  font-weight: bold;
-}
-
-/* Generic.Heading */
-/* line 81, ../_sass/styles/_pygments.sass */
-.gi {
-  color: #00a000;
-}
-
-/* Generic.Inserted */
-/* line 86, ../_sass/styles/_pygments.sass */
-.go {
-  color: black;
-  font-style: italic;
-}
-
-/* Generic.Output */
-/* line 92, ../_sass/styles/_pygments.sass */
-.gp {
-  color: #8f5902;
-}
-
-/* Generic.Prompt */
-/* line 97, ../_sass/styles/_pygments.sass */
-.gs {
-  color: black;
-  font-weight: bold;
-}
-
-/* Generic.Strong */
-/* line 103, ../_sass/styles/_pygments.sass */
-.gu {
-  color: purple;
-  font-weight: bold;
-}
-
-/* Generic.Subheading */
-/* line 109, ../_sass/styles/_pygments.sass */
-.gt {
-  color: #a40000;
-  font-weight: bold;
-}
-
-/* Generic.Traceback */
-/* line 115, ../_sass/styles/_pygments.sass */
-.kc, .kd, .kn, .kp, .kr, .kt {
-  color: #204a87;
-  font-weight: bold;
-}
-
-/* Keyword.Constant */
-/* Keyword.Declaration */
-/* Keyword.Namespace */
-/* Keyword.Pseudo */
-/* Keyword.Reserved */
-/* Keyword.Type */
-/* line 126, ../_sass/styles/_pygments.sass */
-.ld {
-  color: black;
-}
-
-/* Literal.Date */
-/* line 131, ../_sass/styles/_pygments.sass */
-.m {
-  color: #0000cf;
-  font-weight: bold;
-}
-
-/* Literal.Number */
-/* line 137, ../_sass/styles/_pygments.sass */
-.s {
-  color: #4e9a06;
-}
-
-/* Literal.String */
-/* line 142, ../_sass/styles/_pygments.sass */
-.na {
-  color: #c4a000;
-}
-
-/* Name.Attribute */
-/* line 147, ../_sass/styles/_pygments.sass */
-.nb {
-  color: #204a87;
-}
-
-/* Name.Builtin */
-/* line 152, ../_sass/styles/_pygments.sass */
-.nc, .no {
-  color: black;
-}
-
-/* Name.Class */
-/* Name.Constant */
-/* line 158, ../_sass/styles/_pygments.sass */
-.nd {
-  color: #5c35cc;
-  font-weight: bold;
-}
-
-/* Name.Decorator */
-/* line 164, ../_sass/styles/_pygments.sass */
-.ni {
-  color: #ce5c00;
-}
-
-/* Name.Entity */
-/* line 169, ../_sass/styles/_pygments.sass */
-.ne {
-  color: #cc0000;
-  font-weight: bold;
-}
-
-/* Name.Exception */
-/* line 175, ../_sass/styles/_pygments.sass */
-.nf {
-  color: black;
-}
-
-/* Name.Function */
-/* line 180, ../_sass/styles/_pygments.sass */
-.nl {
-  color: #f57900;
-}
-
-/* Name.Label */
-/* line 185, ../_sass/styles/_pygments.sass */
-.nn, .nx, .py {
-  color: black;
-}
-
-/* Name.Namespace */
-/* Name.Other */
-/* Name.Property */
-/* line 192, ../_sass/styles/_pygments.sass */
-.nt {
-  color: #204a87;
-  font-weight: bold;
-}
-
-/* Name.Tag */
-/* line 198, ../_sass/styles/_pygments.sass */
-.nv {
-  color: black;
-}
-
-/* Name.Variable */
-/* line 203, ../_sass/styles/_pygments.sass */
-.ow {
-  color: #204a87;
-  font-weight: bold;
-}
-
-/* Operator.Word */
-/* line 209, ../_sass/styles/_pygments.sass */
-.w {
-  color: #f8f8f8;
-  text-decoration: underline;
-}
-
-/* Text.Whitespace */
-/* line 215, ../_sass/styles/_pygments.sass */
-.mf, .mh, .mi, .mo {
-  color: #0000cf;
-  font-weight: bold;
-}
-
-/* Literal.Number.Float */
-/* Literal.Number.Hex */
-/* Literal.Number.Integer */
-/* Literal.Number.Oct */
-/* line 224, ../_sass/styles/_pygments.sass */
-.sb, .sc {
-  color: #4e9a06;
-}
-
-/* Literal.String.Backtick */
-/* Literal.String.Char */
-/* line 230, ../_sass/styles/_pygments.sass */
-.sd {
-  color: #8f5902;
-  font-style: italic;
-}
-
-/* Literal.String.Doc */
-/* line 236, ../_sass/styles/_pygments.sass */
-.s2, .se, .sh, .si, .sx, .sr, .s1, .ss {
-  color: #4e9a06;
-}
-
-/* Literal.String.Double */
-/* Literal.String.Escape */
-/* Literal.String.Heredoc */
-/* Literal.String.Interpol */
-/* Literal.String.Other */
-/* Literal.String.Regex */
-/* Literal.String.Single */
-/* Literal.String.Symbol */
-/* line 248, ../_sass/styles/_pygments.sass */
-.bp {
-  color: #3465a4;
-}
-
-/* Name.Builtin.Pseudo */
-/* line 253, ../_sass/styles/_pygments.sass */
-.vc, .vg, .vi {
-  color: black;
-}
-
-/* Name.Variable.Class */
-/* Name.Variable.Global */
-/* Name.Variable.Instance */
-/* line 260, ../_sass/styles/_pygments.sass */
-.il {
-  color: #0000cf;
-  font-weight: bold;
-}
-
-/* Literal.Number.Integer.Long */
 /* line 12, ../_sass/styles/_shared.sass */
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -457,7 +147,8 @@ header nav:hover ul {
 /* line 2, ../_sass/styles/_post.sass */
 article[role='post'] {
   font-size: 14px;
-  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 100px;
   background: #bd1e09;
   color: #fefffe;
   text-shadow: #971807 0 1px 3px;
@@ -466,8 +157,9 @@ article[role='post'] {
 article[role='post'] h1 {
   font-size: 144px;
   font-weight: bold;
+  margin-left: -10px;
 }
-/* line 10, ../_sass/styles/_post.sass */
+/* line 11, ../_sass/styles/_post.sass */
 article[role='post'] h2, article[role='post'] h3, article[role='post'] h4, article[role='post'] h5, article[role='post'] h6 {
   font-size: 18px;
   line-height: 25px;
@@ -475,11 +167,11 @@ article[role='post'] h2, article[role='post'] h3, article[role='post'] h4, artic
   margin-top: 25px;
   margin-bottom: 10px;
 }
-/* line 23, ../_sass/styles/_post.sass */
+/* line 25, ../_sass/styles/_post.sass */
 article[role='post'] ul li {
   line-height: 25px;
 }
-/* line 26, ../_sass/styles/_post.sass */
+/* line 28, ../_sass/styles/_post.sass */
 article[role='post'] a {
   color: #ffcc00;
 }
@@ -521,3 +213,248 @@ pre > code {
   -o-box-shadow: none;
   box-shadow: none;
 }
+
+/* line 1, ../_sass/pygments/_monokai.sass */
+.hll {
+  background-color: #49483e;
+}
+
+/* line 4, ../_sass/pygments/_monokai.sass */
+.c {
+  color: #75715e;
+}
+
+/* Comment */
+/* line 9, ../_sass/pygments/_monokai.sass */
+.err {
+  color: #960050;
+  background-color: #1e0010;
+}
+
+/* Error */
+/* line 15, ../_sass/pygments/_monokai.sass */
+.k {
+  color: #66d9ef;
+}
+
+/* Keyword */
+/* line 20, ../_sass/pygments/_monokai.sass */
+.l {
+  color: #ae81ff;
+}
+
+/* Literal */
+/* line 25, ../_sass/pygments/_monokai.sass */
+.n {
+  color: #f8f8f2;
+}
+
+/* Name */
+/* line 30, ../_sass/pygments/_monokai.sass */
+.o {
+  color: #f92672;
+}
+
+/* Operator */
+/* line 35, ../_sass/pygments/_monokai.sass */
+.p {
+  color: #f8f8f2;
+}
+
+/* Punctuation */
+/* line 40, ../_sass/pygments/_monokai.sass */
+.cm, .cp, .c1, .cs {
+  color: #75715e;
+}
+
+/* Comment.Multiline */
+/* Comment.Preproc */
+/* Comment.Single */
+/* Comment.Special */
+/* line 48, ../_sass/pygments/_monokai.sass */
+.ge {
+  font-style: italic;
+}
+
+/* Generic.Emph */
+/* line 53, ../_sass/pygments/_monokai.sass */
+.gs {
+  font-weight: bold;
+}
+
+/* Generic.Strong */
+/* line 58, ../_sass/pygments/_monokai.sass */
+.kc, .kd {
+  color: #66d9ef;
+}
+
+/* Keyword.Constant */
+/* Keyword.Declaration */
+/* line 64, ../_sass/pygments/_monokai.sass */
+.kn {
+  color: #f92672;
+}
+
+/* Keyword.Namespace */
+/* line 69, ../_sass/pygments/_monokai.sass */
+.kp, .kr, .kt {
+  color: #66d9ef;
+}
+
+/* Keyword.Pseudo */
+/* Keyword.Reserved */
+/* Keyword.Type */
+/* line 76, ../_sass/pygments/_monokai.sass */
+.ld {
+  color: #e6db74;
+}
+
+/* Literal.Date */
+/* line 81, ../_sass/pygments/_monokai.sass */
+.m {
+  color: #ae81ff;
+}
+
+/* Literal.Number */
+/* line 86, ../_sass/pygments/_monokai.sass */
+.s {
+  color: #e6db74;
+}
+
+/* Literal.String */
+/* line 91, ../_sass/pygments/_monokai.sass */
+.na {
+  color: #a6e22e;
+}
+
+/* Name.Attribute */
+/* line 96, ../_sass/pygments/_monokai.sass */
+.nb {
+  color: #f8f8f2;
+}
+
+/* Name.Builtin */
+/* line 101, ../_sass/pygments/_monokai.sass */
+.nc {
+  color: #a6e22e;
+}
+
+/* Name.Class */
+/* line 106, ../_sass/pygments/_monokai.sass */
+.no {
+  color: #66d9ef;
+}
+
+/* Name.Constant */
+/* line 111, ../_sass/pygments/_monokai.sass */
+.nd {
+  color: #a6e22e;
+}
+
+/* Name.Decorator */
+/* line 116, ../_sass/pygments/_monokai.sass */
+.ni {
+  color: #f8f8f2;
+}
+
+/* Name.Entity */
+/* line 121, ../_sass/pygments/_monokai.sass */
+.ne, .nf {
+  color: #a6e22e;
+}
+
+/* Name.Exception */
+/* Name.Function */
+/* line 127, ../_sass/pygments/_monokai.sass */
+.nl, .nn {
+  color: #f8f8f2;
+}
+
+/* Name.Label */
+/* Name.Namespace */
+/* line 133, ../_sass/pygments/_monokai.sass */
+.nx {
+  color: #a6e22e;
+}
+
+/* Name.Other */
+/* line 138, ../_sass/pygments/_monokai.sass */
+.py {
+  color: #f8f8f2;
+}
+
+/* Name.Property */
+/* line 143, ../_sass/pygments/_monokai.sass */
+.nt {
+  color: #f92672;
+}
+
+/* Name.Tag */
+/* line 148, ../_sass/pygments/_monokai.sass */
+.nv {
+  color: #f8f8f2;
+}
+
+/* Name.Variable */
+/* line 153, ../_sass/pygments/_monokai.sass */
+.ow {
+  color: #f92672;
+}
+
+/* Operator.Word */
+/* line 158, ../_sass/pygments/_monokai.sass */
+.w {
+  color: #f8f8f2;
+}
+
+/* Text.Whitespace */
+/* line 163, ../_sass/pygments/_monokai.sass */
+.mf, .mh, .mi, .mo {
+  color: #ae81ff;
+}
+
+/* Literal.Number.Float */
+/* Literal.Number.Hex */
+/* Literal.Number.Integer */
+/* Literal.Number.Oct */
+/* line 171, ../_sass/pygments/_monokai.sass */
+.sb, .sc, .sd, .s2 {
+  color: #e6db74;
+}
+
+/* Literal.String.Backtick */
+/* Literal.String.Char */
+/* Literal.String.Doc */
+/* Literal.String.Double */
+/* line 179, ../_sass/pygments/_monokai.sass */
+.se {
+  color: #ae81ff;
+}
+
+/* Literal.String.Escape */
+/* line 184, ../_sass/pygments/_monokai.sass */
+.sh, .si, .sx, .sr, .s1, .ss {
+  color: #e6db74;
+}
+
+/* Literal.String.Heredoc */
+/* Literal.String.Interpol */
+/* Literal.String.Other */
+/* Literal.String.Regex */
+/* Literal.String.Single */
+/* Literal.String.Symbol */
+/* line 194, ../_sass/pygments/_monokai.sass */
+.bp, .vc, .vg, .vi {
+  color: #f8f8f2;
+}
+
+/* Name.Builtin.Pseudo */
+/* Name.Variable.Class */
+/* Name.Variable.Global */
+/* Name.Variable.Instance */
+/* line 202, ../_sass/pygments/_monokai.sass */
+.il {
+  color: #ae81ff;
+}
+
+/* Literal.Number.Integer.Long */
