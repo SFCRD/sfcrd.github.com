@@ -15,22 +15,34 @@ header
       font-weight: bold
       color: $black
 
-    ul
+    table
       margin-top: 10px
       font-size: 12px
       line-height: 16px
       color: $grey
+      border-left: 1px solid $light
+      width: 100%
       
-      li a
+      thead
+        display: none
+      
+      td
+        padding: 6px
+      
+      tr:hover
+        color: darken( $grey, 10% )
+        background: $light
+      
+      a
         font-weight: bold
         @include unstyled-link
-        @include link-colors( $grey )
 
-    ul
+    table
       display: none
-
+    
     &:hover
-      ul
-        display: block
+      table
+        display: table
+        width: 100%
 
 // end

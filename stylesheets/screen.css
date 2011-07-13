@@ -68,22 +68,22 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 12, ../_sass/styles/_shared.sass */
+/* line 17, ../_sass/styles/_shared.sass */
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-/* line 15, ../_sass/styles/_shared.sass */
+/* line 20, ../_sass/styles/_shared.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 18, ../_sass/styles/_shared.sass */
+/* line 23, ../_sass/styles/_shared.sass */
 em {
   font-style: italic;
 }
 
-/* line 21, ../_sass/styles/_shared.sass */
+/* line 26, ../_sass/styles/_shared.sass */
 a {
   color: inherit;
   text-decoration: inherit;
@@ -93,12 +93,12 @@ a {
 a:active, a:focus {
   outline: none;
 }
-/* line 23, ../_sass/styles/_shared.sass */
+/* line 28, ../_sass/styles/_shared.sass */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 27, ../_sass/styles/_shared.sass */
+/* line 32, ../_sass/styles/_shared.sass */
 .wrapper {
   padding: 14px 30px;
   width: 960px;
@@ -125,31 +125,46 @@ header nav h2 {
   color: #343434;
 }
 /* line 18, ../_sass/styles/_header.sass */
-header nav ul {
+header nav table {
   margin-top: 10px;
   font-size: 12px;
   line-height: 16px;
   color: #b6b6b6;
+  border-left: 1px solid #f9f9f9;
+  width: 100%;
 }
-/* line 24, ../_sass/styles/_header.sass */
-header nav ul li a {
+/* line 26, ../_sass/styles/_header.sass */
+header nav table thead {
+  display: none;
+}
+/* line 29, ../_sass/styles/_header.sass */
+header nav table td {
+  padding: 6px;
+}
+/* line 32, ../_sass/styles/_header.sass */
+header nav table tr:hover {
+  color: #9d9d9d;
+  background: #f9f9f9;
+}
+/* line 36, ../_sass/styles/_header.sass */
+header nav table a {
   font-weight: bold;
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
-  color: #b6b6b6;
 }
 /* line 6, ../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
-header nav ul li a:active, header nav ul li a:focus {
+header nav table a:active, header nav table a:focus {
   outline: none;
 }
-/* line 29, ../_sass/styles/_header.sass */
-header nav ul {
+/* line 40, ../_sass/styles/_header.sass */
+header nav table {
   display: none;
 }
-/* line 33, ../_sass/styles/_header.sass */
-header nav:hover ul {
-  display: block;
+/* line 44, ../_sass/styles/_header.sass */
+header nav:hover table {
+  display: table;
+  width: 100%;
 }
 
 /* line 2, ../_sass/styles/_post.sass */
