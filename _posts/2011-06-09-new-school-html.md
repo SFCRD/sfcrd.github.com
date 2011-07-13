@@ -51,13 +51,13 @@ Introduce new-school HTML to people and make it approachable.
 
 - Create a Sass stylesheet:
 
-~~~~ scss
+{% highlight scss %}
 /* style.scss */
 #navbar {
   width: 80%;
   height: 23px;
 }
-~~~~
+{% endhighlight %}
 
 - Run `sass --watch style.scss:style.css`.
 	
@@ -71,7 +71,7 @@ Sass will watch your file for any changes and kick out a new compiled stylesheet
 
 - SCSS adds variables, nested styles, functions, math, inheritance, and mixins.
 
-~~~~
+{% highlight scss %}
 $blue: #0000F4;
 $size: 14px;
 
@@ -87,7 +87,7 @@ $size: 14px;
 		@include underline;
 	}
 }
-~~~~
+{% endhighlight %}
 
 ### Using Sass with existing CSS
 
@@ -154,28 +154,28 @@ Compass has a ton of CSS3 mixins for:
 
 Before:
 
-~~~~
+{% highlight scss %}
 .box {
 	-moz-box-shadow: #637080 0 -3px 10px 0;
 	-webkit-box-shadow: #637080 0 -3px 10px 0;
 	-o-box-shadow: #637080 0 -3px 10px 0;
 	box-shadow: #637080 0 -3px 10px 0;	
 }
-~~~~
+{% endhighlight %}
 
 Compass:
 
-~~~~
+{% highlight scss %}
 .box {
 	@include box-shadow( #637080 0 -3px 10px )
 }
-~~~~
+{% endhighlight %}
 
 #### Border Radius (handles Webkit, Mozilla, Gecko, IE9, and CSS3)
 
 Before:
 
-~~~~
+{% highlight scss %}
 .box {
 	-moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -184,27 +184,27 @@ Before:
   -khtml-border-radius: 6px;
   border-radius: 6px;
 }
-~~~~
+{% endhighlight %}
 
 Compass:
 
-~~~~
+{% highlight scss %}
 .box {
 	@include border-radius( 6px )
 }
-~~~~
+{% endhighlight %}
 
 #### Functions
 
 Compass provides a bunch of useful Sass functions, like `image-height`, which can read in an image and provide the dimensions for you in your stylesheet. No more measuring!
 
-~~~~
+{% highlight scss %}
 .profile {
 	$img: "avatar.jpg"
 	width: image-width( $img )
 	height: image-height( $img )
 }
-~~~~
+{% endhighlight %}
 
 ## What is Mustache.js?
 
@@ -224,33 +224,33 @@ Compass provides a bunch of useful Sass functions, like `image-height`, which ca
 
 A Mustache template ...
 
-~~~~xml
+{% highlight html %}
 <div>
 	<h1>Hello, {{name}}!</h1>
 	<h2>You have {{points}} points.</h2>
 </div>
-~~~~
+{% endhighlight %}
 
 ... plus **data** ...
 
-~~~~javascript
+{% highlight js %}
 var user = { name : 'Larissa', points : 5000 };
-~~~~
+{% endhighlight %}
 
 ... equals some good lookin' markup:
 
-~~~~xml
+{% highlight html %}
 <div>
 	<h1>Hello, Larissa!</h1>
 	<h2>You have 5000 points.</h2>
 </div>
-~~~~
+{% endhighlight %}
 
 ### How would you have done that without Templating?
 
 Probably like this:
 
-~~~~javascript
+{% highlight js %}
 var user = { name : 'Larissa', points : 5000 };
 
 var markup = "<div><h1>Hello, "
@@ -258,7 +258,7 @@ var markup = "<div><h1>Hello, "
 	+ "!</h1><h2>You have "
 	+ user.points
 	+ " points.</h2></div>";
-~~~~
+{% endhighlight %}
 
 But this puts HTML into your JavaScript as strings, and maintaining that is a real pain.
 
@@ -278,47 +278,47 @@ But this puts HTML into your JavaScript as strings, and maintaining that is a re
 
 Set up a template and a place to put your HTML:
 
-~~~~xml
+{% highlight html %}
 <script id="my-template" type="text/x-mustache-template">
 	<h1>{{message}}</h1>
 </script>
 
 <div id="target-div"></div>
-~~~~
+{% endhighlight %}
 
 Then interpolate javascript values into it:
 
-~~~~javascript
+{% highlight js %}
 var jsonData = { message: "Hello World!" };
 
 var myTemplate = $( '#my-template' ).text();
 
 $( '#target-div' ).html(Mustache.to_html(myTemplate, jsonData));
-~~~~
+{% endhighlight %}
 
 Mustache takes the properties from the data and puts it into your template.
 
-~~~~xml
+{% highlight html %}
 <div id="target-div">
 	<h1>Hello World!</h1>
 </div>
-~~~~
+{% endhighlight %}
 
 ### Iterating over collections
 
 Mustache has the ability to implicitly iterate over a collection it parses.
 
-~~~~xml
+{% highlight html %}
 <script id="my-template" type="text/x-mustache-template">
 	{{#peeps}}
 	<div>Hello, {{name}}!</div>
 	{{/peeps}}
 </script>
-~~~~
+{% endhighlight %}
 
 The data model has a `peeps` field with an array of objects.
 
-~~~~javascript
+{% highlight js %}
 var jsonData = { peeps : [
 	{ name : "Alice" }, 
 	{ name : "Bob" }, 
@@ -328,17 +328,17 @@ var jsonData = { peeps : [
 var myTemplate = $( "#my-template" ).html( );
 
 $( "#target-div" ).html( Mustache.to_html( myTemplate, jsonData ) );
-~~~~
+{% endhighlight %}
 
 Each object will be passed to the iterator, so we can grab all of the names.
 
-~~~~html
+{% highlight html %}
 <div id="target-div">
     <div>Hello, Alice!</div>
     <div>Hello, Bob!</div>
     <div>Hello, Candice!</div>
 </div>
-~~~~
+{% endhighlight %}
 
 ## Conclusion
 
