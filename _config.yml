@@ -5,3 +5,5 @@ redcarpet:
     - autolink
     - fenced_code
     - generate_toc
+exclude: 
+  - config.rb
