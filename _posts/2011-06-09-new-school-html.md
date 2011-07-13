@@ -47,7 +47,7 @@ Introduce new-school HTML to people and make it approachable.
 
 - Create a Sass stylesheet:
 
-~~~~
+~~~~ scss
 /* style.scss */
 #navbar {
   width: 80%;
