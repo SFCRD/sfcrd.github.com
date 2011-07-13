@@ -1,0 +1,29 @@
+
+header
+
+  nav
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background: $white
+    @include box-shadow( $black 0 0 3px )
+
+    ul
+      margin-top: 10px
+      font-size: 12px
+      line-height: 16px
+      
+      li a
+        font-weight: bold
+        @include unstyled-link
+        @include link-colors( $grey )        
+
+    ul
+      display: none
+
+    &:hover
+      ul
+        display: block
+
+// end

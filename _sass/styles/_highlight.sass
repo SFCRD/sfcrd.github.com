@@ -1,9 +1,18 @@
 pre, code
+  @include text-shadow( none )
+  @include border-radius( 6px )
+  @include box-shadow( darken( $dark, 8% ) 0 0 3px 0 inset )
   font-family: courier
-  background: #FBFAF7
+  background: $dark
+  margin: 10px 0
+
+pre
   padding: 5px 10px
-  border: 1px solid #F3F2EF
+  
+code
+  padding: 2px 5px
 
 pre > code
   background: transparent
   border: none
+  @include box-shadow( none )

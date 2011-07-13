@@ -9,6 +9,29 @@
 		<![endif]-->
 	</head>
 	<body>
-		{{ content }}
+		
+		<header>
+			<nav>
+				<div class="wrapper">
+					<h2>
+						Menu
+					</h2>
+					<ul>
+						{% for post in site.posts %}
+						<li>
+							<a href="{{ post.url }}">{{ post.title }}</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<article role="post">
+			<div class="wrapper">
+				{{ content }}
+			</div>
+		</article>
+		
 	</body>
 </html>
