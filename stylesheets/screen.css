@@ -118,12 +118,20 @@ header nav {
   box-shadow: #343434 0 0 3px;
 }
 /* line 12, ../_sass/styles/_header.sass */
+header nav h2 {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: bold;
+  color: #343434;
+}
+/* line 18, ../_sass/styles/_header.sass */
 header nav ul {
   margin-top: 10px;
   font-size: 12px;
   line-height: 16px;
+  color: #b6b6b6;
 }
-/* line 17, ../_sass/styles/_header.sass */
+/* line 24, ../_sass/styles/_header.sass */
 header nav ul li a {
   font-weight: bold;
   color: inherit;
@@ -135,11 +143,11 @@ header nav ul li a {
 header nav ul li a:active, header nav ul li a:focus {
   outline: none;
 }
-/* line 22, ../_sass/styles/_header.sass */
+/* line 29, ../_sass/styles/_header.sass */
 header nav ul {
   display: none;
 }
-/* line 26, ../_sass/styles/_header.sass */
+/* line 33, ../_sass/styles/_header.sass */
 header nav:hover ul {
   display: block;
 }
