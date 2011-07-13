@@ -9,11 +9,17 @@ header
     background: $white
     @include box-shadow( $black 0 0 3px )
 
+    ul
+      @include horizontal-list( 10px )
+
     h2
       font-size: 18px
       line-height: 25px
       font-weight: bold
       color: $black
+      
+      a
+        color: $grey
 
     table
       margin-top: 10px
@@ -37,10 +43,12 @@ header
         font-weight: bold
         @include unstyled-link
 
-    table
+    table, h2 a
       display: none
     
     &:hover
+      h2 a
+        display: inline
     
       table
         display: table

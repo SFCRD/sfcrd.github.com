@@ -118,13 +118,48 @@ header nav {
   box-shadow: #343434 0 0 3px;
 }
 /* line 12, ../_sass/styles/_header.sass */
+header nav ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 60, ../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header nav ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 48, ../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header nav ul li:first-child, header nav ul li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header nav ul li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header nav ul li.last {
+  padding-right: 0;
+}
+/* line 15, ../_sass/styles/_header.sass */
 header nav h2 {
   font-size: 18px;
   line-height: 25px;
   font-weight: bold;
   color: #343434;
 }
-/* line 18, ../_sass/styles/_header.sass */
+/* line 21, ../_sass/styles/_header.sass */
+header nav h2 a {
+  color: #b6b6b6;
+}
+/* line 24, ../_sass/styles/_header.sass */
 header nav table {
   margin-top: 10px;
   font-size: 12px;
@@ -133,20 +168,20 @@ header nav table {
   border-left: 1px solid #f9f9f9;
   width: 100%;
 }
-/* line 26, ../_sass/styles/_header.sass */
+/* line 32, ../_sass/styles/_header.sass */
 header nav table thead {
   display: none;
 }
-/* line 29, ../_sass/styles/_header.sass */
+/* line 35, ../_sass/styles/_header.sass */
 header nav table td {
   padding: 6px;
 }
-/* line 32, ../_sass/styles/_header.sass */
+/* line 38, ../_sass/styles/_header.sass */
 header nav table tr:hover {
   color: #9d9d9d;
   background: #f9f9f9;
 }
-/* line 36, ../_sass/styles/_header.sass */
+/* line 42, ../_sass/styles/_header.sass */
 header nav table a {
   font-weight: bold;
   color: inherit;
@@ -157,11 +192,15 @@ header nav table a {
 header nav table a:active, header nav table a:focus {
   outline: none;
 }
-/* line 40, ../_sass/styles/_header.sass */
-header nav table {
+/* line 46, ../_sass/styles/_header.sass */
+header nav table, header nav h2 a {
   display: none;
 }
-/* line 45, ../_sass/styles/_header.sass */
+/* line 50, ../_sass/styles/_header.sass */
+header nav:hover h2 a {
+  display: inline;
+}
+/* line 53, ../_sass/styles/_header.sass */
 header nav:hover table {
   display: table;
   width: 100%;
