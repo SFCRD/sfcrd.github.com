@@ -60,25 +60,25 @@ These verbs can either apply to **one** resource, or the entire **collection** o
 
 Typically, when dealing with resources, you end up with five verb/subject combinations you use almost exclusively.
 
-~~~~
+{% highlight bash %}
 GET     /books      # show all of the books
 POST    /books      # create a new book
 GET     /books/:id  # show a specific book
 PUT     /books/:id  # update a specific book
 DELETE  /books/:id  # destroy a specific book
-~~~~
+{% endhighlight %}
 
 ### How the common verbs map to Rails
 
 Since web browsers only `GET`, we end up with two of these routes by name in rails:
 
-~~~~
+{% highlight bash %}
 books  GET     /books      # show all of the books
        POST    /books      # create a new book
  book  GET     /books/:id  # show a specific book
        PUT     /books/:id  # update a specific book
        DELETE  /books/:id  # destroy a specific book
-~~~~
+{% endhighlight %}
 
 But that's only five verbs. What are the other two?
 
@@ -90,7 +90,7 @@ This is where forms come in. We get two more verbs now, **new** and **edit**, de
 
 These both should give us a form to let us describe what data we would like to send with the request.
 
-~~~~
+{% highlight bash %}
     books  GET     /books           # show all of the books
            POST    /books           # create a new book
  new_book  GET     /books/new       # form for a new book
@@ -98,13 +98,13 @@ edit_book  GET     /books/:id/edit  # form for an existing book
      book  GET     /books/:id       # show a specific book
            PUT     /books/:id       # update a specific book
            DELETE  /books/:id       # destroy a specific book
-~~~~
+{% endhighlight %}
 
 ### A Rails Resource
 
 In fact, this is the exact output for a new rails resource when you run `rake routes`.
 
-~~~~
+{% highlight bash %}
     todos GET    /todos(.:format)          {:controller=>"todos", :action=>"index"}
           POST   /todos(.:format)          {:controller=>"todos", :action=>"create"}
  new_todo GET    /todos/new(.:format)      {:controller=>"todos", :action=>"new"}
@@ -112,7 +112,7 @@ edit_todo GET    /todos/:id/edit(.:format) {:controller=>"todos", :action=>"edit
      todo GET    /todos/:id(.:format)      {:controller=>"todos", :action=>"show"}
           PUT    /todos/:id(.:format)      {:controller=>"todos", :action=>"update"}
           DELETE /todos/:id(.:format)      {:controller=>"todos", :action=>"destroy"}
-~~~~
+{% endhighlight %}
 
 There are four verbs we can `GET`, and these end up being our pages. 
 
