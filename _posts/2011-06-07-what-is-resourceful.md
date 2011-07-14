@@ -1,11 +1,13 @@
 ---
 layout: post
+title: "What is Resourceful?"
+excerpt: "A whirlwind tour of resourcefulness in Rails."
 
 ---
 
 # What is Resourceful?
 
-A whirlwind tour of Resourcefulness in Rails
+A whirlwind tour of resourcefulness in Rails.
 
 ## What is a Resource?
 

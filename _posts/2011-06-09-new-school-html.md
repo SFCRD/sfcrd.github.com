@@ -1,7 +1,9 @@
 ---
 layout: post
-
+title: "New-School HTML"
+excerpt: "Introduce new-school HTML to people and make it approachable."
 ---
+
 # New-School HTML
 
 Introduce new-school HTML to people and make it approachable.

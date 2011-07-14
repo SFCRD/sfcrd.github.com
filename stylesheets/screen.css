@@ -206,6 +206,28 @@ header nav:hover table {
   width: 100%;
 }
 
+/* line 5, ../_sass/styles/_index.sass */
+ul#posts li a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  color: #c7f464;
+}
+/* line 6, ../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+ul#posts li a:active, ul#posts li a:focus {
+  outline: none;
+}
+/* line 8, ../_sass/styles/_index.sass */
+ul#posts li h2 {
+  font-size: 55px;
+  line-height: 60px;
+}
+/* line 11, ../_sass/styles/_index.sass */
+ul#posts li p {
+  font-size: 22px;
+  color: #fefffe;
+}
+
 /* line 2, ../_sass/styles/_post.sass */
 body, html {
   background: #556270;
