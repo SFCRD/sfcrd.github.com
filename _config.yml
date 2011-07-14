@@ -1,9 +1,11 @@
 markdown: kramdown
-pygments: true
-redcarpet:
-  extensions:
-    - autolink
-    - fenced_code
-    - generate_toc
+pygments: false
+kramdown:
+  use_coderay: true
+  
+  coderay:
+    coderay_line_numbers: true
+    coderay_tab_width: 2
+    
 exclude: 
   - config.rb
