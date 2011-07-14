@@ -299,19 +299,20 @@ pre, code {
   font-family: courier;
   background: #262b32;
   margin: 10px 0;
+  white-space: pre;
 }
 
-/* line 9, ../_sass/styles/_highlight.sass */
+/* line 10, ../_sass/styles/_highlight.sass */
 pre {
   padding: 5px 10px;
 }
 
-/* line 12, ../_sass/styles/_highlight.sass */
+/* line 13, ../_sass/styles/_highlight.sass */
 code {
   padding: 2px 5px;
 }
 
-/* line 15, ../_sass/styles/_highlight.sass */
+/* line 16, ../_sass/styles/_highlight.sass */
 pre > code {
   background: transparent;
   border: none;

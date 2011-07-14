@@ -1,9 +1,5 @@
 markdown: kramdown
 pygments: true
-redcarpet:
-  extensions:
-    - autolink
-    - fenced_code
-    - generate_toc
+
 exclude: 
   - config.rb
