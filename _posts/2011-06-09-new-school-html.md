@@ -26,9 +26,9 @@ Introduce new-school HTML to people and make it approachable.
 
 ## The Solution
 
-- Sass - http://sass-lang.com/
-- Compass - http://compass-style.org/
-- Mustache - http://mustache.github.com/
+- Sass - [http://sass-lang.com/](http://sass-lang.com/)
+- Compass - [http://compass-style.org/](http://compass-style.org/)
+- Mustache - [http://mustache.github.com/](http://mustache.github.com/)
 
 ## What is Sass?
 
@@ -212,7 +212,7 @@ Compass provides a bunch of useful Sass functions, like `image-height`, which ca
 
 - HTML templating with JavaScript.
 
-- JavaScript implementation of Mustache - https://github.com/janl/mustache.js
+- JavaScript implementation of Mustache - [https://github.com/janl/mustache.js](https://github.com/janl/mustache.js)
 
 - Logic-less templates.
 
