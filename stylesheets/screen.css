@@ -297,22 +297,21 @@ pre, code {
   -o-box-shadow: #14171b 0 0 3px 0 inset;
   box-shadow: #14171b 0 0 3px 0 inset;
   font-family: courier;
-  white-space: pre;
   background: #262b32;
   margin: 10px 0;
 }
 
-/* line 10, ../_sass/styles/_highlight.sass */
+/* line 9, ../_sass/styles/_highlight.sass */
 pre {
-  padding: 10px 16px;
+  padding: 5px 10px;
 }
 
-/* line 13, ../_sass/styles/_highlight.sass */
+/* line 12, ../_sass/styles/_highlight.sass */
 code {
   padding: 2px 5px;
 }
 
-/* line 16, ../_sass/styles/_highlight.sass */
+/* line 15, ../_sass/styles/_highlight.sass */
 pre > code {
   background: transparent;
   border: none;
