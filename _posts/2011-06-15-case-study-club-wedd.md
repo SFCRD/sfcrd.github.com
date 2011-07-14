@@ -64,10 +64,11 @@ Because we were going to be sitting on top of a (mostly) **RESTful** backend, we
 - Backbone provides a **History** module to support deep-linking.
 
 {% highlight js %}
-ClubWed.Activities = Backbone.Collection.extend({
-  model: ClubWed.Activity,
-  url: "/activities"
-});
+ClubWed.Activities = Backbone.Collection.extend(
+{
+  model : ClubWed.Activity,
+  url   : "/activities"
+} );
 {% endhighlight %}
 
 ## Challenge: Handle **tons** of dynamic content from the backend.
@@ -78,25 +79,25 @@ Mustache allowed us to translate the copious amount of data from the backend int
 
 {% highlight html %}
 <ul class="carousel">
-	{{#products}}
-	<li>
-		<div class="jcarousel-item-wrapper">
-			<div class="product">      
-				<img src="{{main_url}}" width="52" height="52" alt="Temp Product Icon">
-				<div class="name">    
-					{{#hasBrand}}
-					<span class="bolded">{{brand}}</span><br/>
-					{{name}}
-					{{/hasBrand}}
+  {{'{{#products'}}}}
+  <li>
+    <div class="jcarousel-item-wrapper">
+      <div class="product">      
+        <img src="{{main_url}}" width="52" height="52" alt="Temp Product Icon">
+        <div class="name">    
+          {{'{{#hasBrand'}}}}
+          <span class="bolded">{{'{{brand'}}}}</span><br/>
+          {{'{{name'}}}}
+          {{'{{/hasBrand'}}}}
 
-					{{#noBrand}}
-					<span class="bolded no-brand">{{name}}</span>
-					{{/noBrand}}   
-				</div>   
-			</div>
-		</div>
-	</li>
-	{{/products}}
+          {{'{{#noBrand'}}}}
+          <span class="bolded no-brand">{{'{{name'}}}}</span>
+          {{'{{/noBrand'}}}}
+        </div>   
+      </div>
+    </div>
+  </li>
+  {{'{{/products'}}}}
 </ul>
 {% endhighlight %}
 
@@ -110,7 +111,7 @@ Mustache allowed us to translate the copious amount of data from the backend int
 
 ### Font Squirrel
 
-http://www.fontsquirrel.com/fontface/generator
+[http://www.fontsquirrel.com/fontface/generator](http://www.fontsquirrel.com/fontface/generator)
 
 - Font Squirrel can convert your font into all of the web font variations.
 

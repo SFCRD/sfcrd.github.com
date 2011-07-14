@@ -62,7 +62,7 @@ Introduce new-school HTML to people and make it approachable.
 {% endhighlight %}
 
 - Run `sass --watch style.scss:style.css`.
-	
+  
 Sass will watch your file for any changes and kick out a new compiled stylesheet whenever you save.
 
 - That's it!
@@ -78,16 +78,16 @@ $blue: #0000F4;
 $size: 14px;
 
 @mixin underline {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 #main {
-	background-color: $blue;
-	p {
-		font-size: $size + 2px;
-		color: darken( $blue, 30% );
-		@include underline;
-	}
+  background-color: $blue;
+  p {
+    font-size: $size + 2px;
+    color: darken( $blue, 30% );
+    @include underline;
+  }
 }
 {% endhighlight %}
 
@@ -108,7 +108,7 @@ If you're on a project that doesn't currently use Sass, you can easily convert e
 - Basically a **ton** of pre-built Sass mixins to help you author your stylesheets.
 
 ## Why use Compass?
-	
+  
 - Comes with a CSS3 mixin set with all browser inconsistencies considered.
 
 - Comes bundled with [Eric Meyer's CSS Reset 2.0](http://meyerweb.com/eric/tools/css/reset/index.html) and [Blueprint](http://www.blueprintcss.org/).
@@ -158,10 +158,10 @@ Before:
 
 {% highlight scss %}
 .box {
-	-moz-box-shadow: #637080 0 -3px 10px 0;
-	-webkit-box-shadow: #637080 0 -3px 10px 0;
-	-o-box-shadow: #637080 0 -3px 10px 0;
-	box-shadow: #637080 0 -3px 10px 0;	
+  -moz-box-shadow: #637080 0 -3px 10px 0;
+  -webkit-box-shadow: #637080 0 -3px 10px 0;
+  -o-box-shadow: #637080 0 -3px 10px 0;
+  box-shadow: #637080 0 -3px 10px 0;  
 }
 {% endhighlight %}
 
@@ -169,7 +169,7 @@ Compass:
 
 {% highlight scss %}
 .box {
-	@include box-shadow( #637080 0 -3px 10px )
+  @include box-shadow( #637080 0 -3px 10px )
 }
 {% endhighlight %}
 
@@ -179,7 +179,7 @@ Before:
 
 {% highlight scss %}
 .box {
-	-moz-border-radius: 6px;
+  -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -192,7 +192,7 @@ Compass:
 
 {% highlight scss %}
 .box {
-	@include border-radius( 6px )
+  @include border-radius( 6px )
 }
 {% endhighlight %}
 
@@ -202,9 +202,9 @@ Compass provides a bunch of useful Sass functions, like `image-height`, which ca
 
 {% highlight scss %}
 .profile {
-	$img: "avatar.jpg"
-	width: image-width( $img )
-	height: image-height( $img )
+  $img: "avatar.jpg"
+  width: image-width( $img )
+  height: image-height( $img )
 }
 {% endhighlight %}
 
@@ -228,8 +228,8 @@ A Mustache template ...
 
 {% highlight html %}
 <div>
-	<h1>Hello, {{'{{name'}}}}!</h1>
-	<h2>You have {{'{{points'}}}} points.</h2>
+  <h1>Hello, {{'{{name'}}}}!</h1>
+  <h2>You have {{'{{points'}}}} points.</h2>
 </div>
 {% endhighlight %}
 
@@ -243,8 +243,8 @@ var user = { name : 'Larissa', points : 5000 };
 
 {% highlight html %}
 <div>
-	<h1>Hello, Larissa!</h1>
-	<h2>You have 5000 points.</h2>
+  <h1>Hello, Larissa!</h1>
+  <h2>You have 5000 points.</h2>
 </div>
 {% endhighlight %}
 
@@ -256,10 +256,10 @@ Probably like this:
 var user = { name : 'Larissa', points : 5000 };
 
 var markup = "<div><h1>Hello, "
-	+ user.name 
-	+ "!</h1><h2>You have "
-	+ user.points
-	+ " points.</h2></div>";
+  + user.name 
+  + "!</h1><h2>You have "
+  + user.points
+  + " points.</h2></div>";
 {% endhighlight %}
 
 But this puts HTML into your JavaScript as strings, and maintaining that is a real pain.
@@ -282,7 +282,7 @@ Set up a template and a place to put your HTML:
 
 {% highlight html %}
 <script id="my-template" type="text/x-mustache-template">
-	<h1>{{'{{message'}}}}</h1>
+  <h1>{{'{{message'}}}}</h1>
 </script>
 
 <div id="target-div"></div>
@@ -302,7 +302,7 @@ Mustache takes the properties from the data and puts it into your template.
 
 {% highlight html %}
 <div id="target-div">
-	<h1>Hello World!</h1>
+  <h1>Hello World!</h1>
 </div>
 {% endhighlight %}
 
@@ -312,9 +312,9 @@ Mustache has the ability to implicitly iterate over a collection it parses.
 
 {% highlight html %}
 <script id="my-template" type="text/x-mustache-template">
-	{{'{{#peeps'}}}}
-	<div>Hello, {{'{{name'}}}}!</div>
-	{{'{{/peeps'}}}}
+  {{'{{#peeps'}}}}
+  <div>Hello, {{'{{name'}}}}!</div>
+  {{'{{/peeps'}}}}
 </script>
 {% endhighlight %}
 
@@ -322,9 +322,9 @@ The data model has a `peeps` field with an array of objects.
 
 {% highlight js %}
 var jsonData = { peeps : [
-	{ name : "Alice" }, 
-	{ name : "Bob" }, 
-	{ name : "Candice" }
+  { name : "Alice" }, 
+  { name : "Bob" }, 
+  { name : "Candice" }
 ] };
 
 var myTemplate = $( "#my-template" ).html( );
@@ -336,9 +336,9 @@ Each object will be passed to the iterator, so we can grab all of the names.
 
 {% highlight html %}
 <div id="target-div">
-    <div>Hello, Alice!</div>
-    <div>Hello, Bob!</div>
-    <div>Hello, Candice!</div>
+  <div>Hello, Alice!</div>
+  <div>Hello, Bob!</div>
+  <div>Hello, Candice!</div>
 </div>
 {% endhighlight %}
 
