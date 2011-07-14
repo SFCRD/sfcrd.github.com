@@ -33,19 +33,19 @@ Attached to every activity is a collection of products they can add to their Tar
 
 ## The Stack
 
-- jQuery - http://jquery.com/
+- jQuery - [http://jquery.com/](http://jquery.com/)
 
-- Rails - http://rubyonrails.org/
+- Rails - [http://rubyonrails.org/](http://rubyonrails.org/)
 
-- Mustache - http://mustache.github.com/
+- Mustache - [http://mustache.github.com/](http://mustache.github.com/)
 
-- Backbone - http://documentcloud.github.com/backbone/
+- Backbone - [http://documentcloud.github.com/backbone/](http://documentcloud.github.com/backbone/)
 
-- Uploadify - http://www.uploadify.com/
+- Uploadify - [http://www.uploadify.com/](http://www.uploadify.com/)
 
-- Compass - http://compass-style.org/
+- Compass - [http://compass-style.org/](http://compass-style.org/)
 
-- Underscore - http://documentcloud.github.com/underscore/
+- Underscore - [http://documentcloud.github.com/underscore/](http://documentcloud.github.com/underscore/)
 
 ## Challenge: Build a Flash-like site, *without Flash*.
 
@@ -63,12 +63,12 @@ Because we were going to be sitting on top of a (mostly) **RESTful** backend, we
 
 - Backbone provides a **History** module to support deep-linking.
 
-~~~~javascript
+{% highlight js %}
 ClubWed.Activities = Backbone.Collection.extend({
   model: ClubWed.Activity,
   url: "/activities"
 });
-~~~~
+{% endhighlight %}
 
 ## Challenge: Handle **tons** of dynamic content from the backend.
 
@@ -76,7 +76,7 @@ ClubWed.Activities = Backbone.Collection.extend({
 
 Mustache allowed us to translate the copious amount of data from the backend into our views cleanly.
 
-~~~~xml
+{% highlight html %}
 <ul class="carousel">
 	{{#products}}
 	<li>
@@ -98,7 +98,7 @@ Mustache allowed us to translate the copious amount of data from the backend int
 	</li>
 	{{/products}}
 </ul>
-~~~~
+{% endhighlight %}
 
 ## Challenge: Use a custom web font and *@font-face*.
 
@@ -126,6 +126,6 @@ Your CSS needs to be *perfect* to include web fonts across browsers.
 
 Luckily, there's a [compass mixin](http://compass-style.org/reference/compass/css3/font_face/#mixin-font-face) for that!
 
-~~~~css
+{% highlight sass %}
 @include font-face("this name", font-files("this.woff", "woff", "this.otf", "opentype"), "this.eot")
-~~~~
+{% endhighlight %}
