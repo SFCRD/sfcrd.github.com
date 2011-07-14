@@ -1,10 +1,11 @@
 
 ul#posts
+  @include no-bullets
   
   li
     a
       @include unstyled-link
-      @include link-colors( $yellow )
+      @include link-colors( $yellow, $aqua )
     h2
       font-size: 55px
       line-height: 60px
