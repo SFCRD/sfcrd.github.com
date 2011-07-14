@@ -228,8 +228,8 @@ A Mustache template ...
 
 {% highlight html %}
 <div>
-	<h1>Hello, {{name}}!</h1>
-	<h2>You have {{points}} points.</h2>
+	<h1>Hello, {{'{{name'}}}}!</h1>
+	<h2>You have {{'{{points'}}}} points.</h2>
 </div>
 {% endhighlight %}
 
@@ -282,7 +282,7 @@ Set up a template and a place to put your HTML:
 
 {% highlight html %}
 <script id="my-template" type="text/x-mustache-template">
-	<h1>{{message}}</h1>
+	<h1>{{'{{message'}}}}</h1>
 </script>
 
 <div id="target-div"></div>
@@ -312,9 +312,9 @@ Mustache has the ability to implicitly iterate over a collection it parses.
 
 {% highlight html %}
 <script id="my-template" type="text/x-mustache-template">
-	{{#peeps}}
-	<div>Hello, {{name}}!</div>
-	{{/peeps}}
+	{{'{{#peeps'}}}}
+	<div>Hello, {{'{{name'}}}}!</div>
+	{{'{{/peeps'}}}}
 </script>
 {% endhighlight %}
 
