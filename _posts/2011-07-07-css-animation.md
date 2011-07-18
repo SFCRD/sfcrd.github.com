@@ -248,6 +248,7 @@ element {
   height: 250px;
   background: black;
   overflow: hidden;
+	position: relative;
 }
 /* line 200, ../sass/screen.scss */
 #banner > div {
@@ -256,6 +257,7 @@ element {
 }
 /* line 204, ../sass/screen.scss */
 #banner .logo1 {
+	position: absolute;
   margin-left: 17px;
   margin-top: 59px;
   width: 59px;
@@ -264,6 +266,7 @@ element {
 }
 /* line 211, ../sass/screen.scss */
 #banner .red_line {
+	position: absolute;
   margin-left: 94px;
   width: 6px;
   height: 250px;
@@ -272,6 +275,7 @@ element {
 }
 /* line 217, ../sass/screen.scss */
 #banner .blue_line {
+	position: absolute;
   margin-left: 100px;
   width: 7px;
   height: 250px;
