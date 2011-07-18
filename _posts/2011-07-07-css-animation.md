@@ -722,7 +722,6 @@ elment.className = 'show';
 {% endhighlight %}
 
 <script type="text/javascript">
-	alert( 'v2' );
 	function playAnimation( )
 	{
 		$( 'body' ).find( '#banner' ).last( ).toggleClass( 'show' );
@@ -741,3 +740,20 @@ elment.className = 'show';
   <div class="text"></div>
   <div class="logo2"></div>
 </div>
+
+## Reference
+
+**Nike Jordan BCT Low**
+
+(Please reload if an image doesn't show well during the animation.)
+
+- [Flash](http://www.nike.com/jumpman23/BCT/)
+- [HTML](http://ne-zu.com/work/crd/nike/index.html)
+- [Zip](http://ne-zu.com/work/crd/nike/nike.zip)
+ 
+**Lists of CSS Properties**
+
+- [Webkit](http://css-infos.net/properties/webkit.php/)
+- [Mozilla](https://developer.mozilla.org/en/css_reference/mozilla_extensions)
+- [Opera](http://www.opera.com/docs/specs/presto29/)
+- [IE](http://msdn.microsoft.com/en-us/library/ms531207%28v=vs.85%29.aspx)
