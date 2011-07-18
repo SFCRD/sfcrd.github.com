@@ -230,3 +230,267 @@ element {
 <div id="example-four" class="example">
 	This paragraph should pulse. Pulsing is the new blink. You heard it here first. (Only supports for webkit based browsers)
 </div>
+
+## Demo
+
+<style type="text/css">
+	img {
+		background: #FFF;
+		margin: 0;
+		padding: 0;
+		border: 15px solid #FFF;
+	}
+</style>
+<style type="text/css">
+/* line 195, ../sass/screen.scss */
+#banner {
+  width: 300px;
+  height: 250px;
+  background: black;
+  overflow: hidden;
+}
+/* line 200, ../sass/screen.scss */
+#banner > div {
+  position: absolute;
+  background-repeat: no-repeat !important;
+}
+/* line 204, ../sass/screen.scss */
+#banner .logo1 {
+  margin-left: 17px;
+  margin-top: 59px;
+  width: 59px;
+  height: 140px;
+  background: url("http://ne-zu.com/work/crd/CSSAnimation/assets/banner/imgs/sprite.png") left top;
+}
+/* line 211, ../sass/screen.scss */
+#banner .red_line {
+  margin-left: 94px;
+  width: 6px;
+  height: 250px;
+  background: #ec2427;
+	top: 0;
+}
+/* line 217, ../sass/screen.scss */
+#banner .blue_line {
+  margin-left: 100px;
+  width: 7px;
+  height: 250px;
+  background: #1dabed;
+	top: 0;
+}
+/* line 223, ../sass/screen.scss */
+#banner .guy1 {
+  margin-left: 107px;
+  width: 193px;
+  height: 250px;
+  overflow: hidden;
+  background: url("http://ne-zu.com/work/crd/CSSAnimation/assets/banner/imgs/guy.jpg") left -380px;
+  -webkit-transition: all 3s ease-in-out 0s;
+  -moz-transition: all 3s ease-in-out 0s;
+  -o-transition: all 3s ease-in-out 0s;
+  -ms-transition: all 3s ease-in-out 0s;
+  transition: all 3s ease-in-out 0s;
+}
+/* line 231, ../sass/screen.scss */
+#banner .guy2 {
+  width: 300px;
+  height: 250px;
+  background: black url("http://ne-zu.com/work/crd/CSSAnimation/assets/banner/imgs/guy.jpg") left -630px;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 3.5s;
+  -moz-transition: all 0.8s ease 3.5s;
+  -o-transition: all 0.8s ease 3.5s;
+  -ms-transition: all 0.8s ease 3.5s;
+  transition: all 0.8s ease 3.5s;
+}
+/* line 238, ../sass/screen.scss */
+#banner .title {
+  margin-left: 151px;
+  margin-top: 20px;
+  width: 149px;
+  height: 81px;
+  background: url("http://ne-zu.com/work/crd/CSSAnimation/assets/banner/imgs/sprite.png") 150px bottom;
+  -webkit-transition: all 0.8s ease-in-out 4s;
+  -moz-transition: all 0.8s ease-in-out 4s;
+  -o-transition: all 0.8s ease-in-out 4s;
+  -ms-transition: all 0.8s ease-in-out 4s;
+  transition: all 0.8s ease-in-out 4s;
+}
+/* line 246, ../sass/screen.scss */
+#banner .text {
+  margin-left: 153px;
+  margin-top: 115px;
+  width: 136px;
+  height: 28px;
+  background: url("http://ne-zu.com/work/crd/CSSAnimation/assets/banner/imgs/sprite.png") left -180px;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 5.5s;
+  -moz-transition: all 0.8s ease 5.5s;
+  -o-transition: all 0.8s ease 5.5s;
+  -ms-transition: all 0.8s ease 5.5s;
+  transition: all 0.8s ease 5.5s;
+}
+/* line 255, ../sass/screen.scss */
+#banner .logo2 {
+  margin-left: 185px;
+  margin-top: 179px;
+  width: 101px;
+  height: 40px;
+  background: url("http://ne-zu.com/work/crd/CSSAnimation/assets/banner/imgs/sprite.png") left -140px;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 6.2s;
+  -moz-transition: all 0.8s ease 6.2s;
+  -o-transition: all 0.8s ease 6.2s;
+  -ms-transition: all 0.8s ease 6.2s;
+  transition: all 0.8s ease 6.2s;
+}
+/* line 266, ../sass/screen.scss */
+#banner.def .guy2 {
+  opacity: 1;
+}
+/* line 269, ../sass/screen.scss */
+#banner.def .title {
+  background-position: left bottom;
+}
+/* line 272, ../sass/screen.scss */
+#banner.def .text {
+  opacity: 1;
+}
+/* line 275, ../sass/screen.scss */
+#banner.def .logo2 {
+  opacity: 1;
+}
+
+
+/* line 378, ../sass/screen.scss */
+.pre.sec6.show section article:nth-child(7) #banner.play_animation .guy1 {
+  background-position: left top;
+}
+/* line 381, ../sass/screen.scss */
+.pre.sec6.show section article:nth-child(7) #banner.play_animation .guy2 {
+  opacity: 1;
+}
+/* line 384, ../sass/screen.scss */
+.pre.sec6.show section article:nth-child(7) #banner.play_animation .title {
+  background-position: 0px bottom;
+}
+/* line 387, ../sass/screen.scss */
+.pre.sec6.show section article:nth-child(7) #banner.play_animation .text {
+  opacity: 1;
+}
+/* line 390, ../sass/screen.scss */
+.pre.sec6.show section article:nth-child(7) #banner.play_animation .logo2 {
+  opacity: 1;
+}
+</style>
+Here is a example of a banner using Flash vs CSS animation.
+Compare below banners using Flash and CSS3.
+
+- [Flash](http://ne-zu.com/work/crd/CSSAnimation/assets/banner/flash/targ_sw_boy_300x250_40_v05.html)
+- [HTML](http://ne-zu.com/work/crd/CSSAnimation/assets/banner/html/index.html)
+- [Zip](http://ne-zu.com/work/crd/CSSAnimation/banner.zip)
+
+### Preparation
+
+To connect html access as less as possible, assemble each image kind.
+
+**png-8: "sprite.png"**
+
+![image](http://ne-zu.com/work/crd/CSSAnimation/assets/banner/imgs/sprite.png)
+![dimensions](http://ne-zu.com/work/crd/CSSAnimation/assets/banner/imgs/guide/sprite_size.png)
+
+**jpg: "guy.jpg"**
+
+![image](http://ne-zu.com/work/crd/CSSAnimation/assets/banner/imgs/guy.jpg)
+![dimensions](http://ne-zu.com/work/crd/CSSAnimation/assets/banner/imgs/guide/guy_size.png)
+
+### Make a box and add background
+
+**HTML**
+
+{% highlight html %}
+<div id="banner"></div>
+{% endhighlight %}
+
+**CSS**
+
+{% highlight css %}
+#banner {
+  width:300px;
+  height:250px;
+  background:black;
+  /*make invisible outside of box*/
+  overflow:hidden;
+}
+{% endhighlight %}
+
+<div id="banner"></div>
+
+### Add logos
+
+**HTML**
+
+{% highlight html %}
+<div id="banner">
+  <div class="logo1"></div>
+</div>
+{% endhighlight %}
+
+**CSS**
+
+{% highlight css %}
+/*define all of div under #banner*/
+#banner > div {  
+  /*make origin left top*/
+  position:absolute;
+  /*disable background repeat*/
+  background-repeat:no-repeat !important;
+}
+.logo1 {
+  margin-left:17px;
+  margin-top:59px;
+  width:59px;
+  height:140px;
+  background:url('sprite.png') left top;
+}
+{% endhighlight %}
+
+<div id="banner">
+  <div class="logo1"></div>
+</div>
+
+### Add red and blue lines
+
+**HTML**
+
+{% highlight html %}
+<div id="banner">
+  <div class="logo1"></div>
+  <div class="red_line"></div>
+  <div class="blue_line"></div>
+</div>
+{% endhighlight %}
+
+**CSS**
+
+{% highlight css %}
+.red_line{
+  margin-left:94px;
+  width:6px;
+  height:250px;
+  background:#ec2427;
+}
+.blue_line{
+  margin-left:100px;
+  width:7px;
+  height:250px;
+  background:#1dabed;
+}
+{% endhighlight %}
+
+<div id="banner">
+  <div class="logo1"></div>
+  <div class="red_line"></div>
+  <div class="blue_line"></div>
+</div>
+
