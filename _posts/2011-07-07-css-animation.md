@@ -258,6 +258,7 @@ element {
 /* line 204, ../sass/screen.scss */
 #banner .logo1 {
 	position: absolute;
+  background-repeat: no-repeat !important;
   margin-left: 17px;
   margin-top: 59px;
   width: 59px;
@@ -267,6 +268,7 @@ element {
 /* line 211, ../sass/screen.scss */
 #banner .red_line {
 	position: absolute;
+  background-repeat: no-repeat !important;
   margin-left: 94px;
   width: 6px;
   height: 250px;
@@ -276,6 +278,7 @@ element {
 /* line 217, ../sass/screen.scss */
 #banner .blue_line {
 	position: absolute;
+  background-repeat: no-repeat !important;
   margin-left: 100px;
   width: 7px;
   height: 250px;
@@ -284,6 +287,8 @@ element {
 }
 /* line 223, ../sass/screen.scss */
 #banner .guy1 {
+	position: absolute;
+  background-repeat: no-repeat !important;
   margin-left: 107px;
   width: 193px;
   height: 250px;
@@ -297,6 +302,8 @@ element {
 }
 /* line 231, ../sass/screen.scss */
 #banner .guy2 {
+	position: absolute;
+  background-repeat: no-repeat !important;
   width: 300px;
   height: 250px;
   background: black url("http://ne-zu.com/work/crd/CSSAnimation/assets/banner/imgs/guy.jpg") left -630px;
@@ -309,6 +316,8 @@ element {
 }
 /* line 238, ../sass/screen.scss */
 #banner .title {
+	position: absolute;
+  background-repeat: no-repeat !important;
   margin-left: 151px;
   margin-top: 20px;
   width: 149px;
@@ -322,6 +331,8 @@ element {
 }
 /* line 246, ../sass/screen.scss */
 #banner .text {
+	position: absolute;
+  background-repeat: no-repeat !important;
   margin-left: 153px;
   margin-top: 115px;
   width: 136px;
@@ -336,6 +347,8 @@ element {
 }
 /* line 255, ../sass/screen.scss */
 #banner .logo2 {
+	position: absolute;
+  background-repeat: no-repeat !important;
   margin-left: 185px;
   margin-top: 179px;
   width: 101px;
@@ -367,23 +380,23 @@ element {
 
 
 /* line 378, ../sass/screen.scss */
-.pre.sec6.show section article:nth-child(7) #banner.play_animation .guy1 {
+#banner.show .guy1 {
   background-position: left top;
 }
 /* line 381, ../sass/screen.scss */
-.pre.sec6.show section article:nth-child(7) #banner.play_animation .guy2 {
+#banner.show .guy2 {
   opacity: 1;
 }
 /* line 384, ../sass/screen.scss */
-.pre.sec6.show section article:nth-child(7) #banner.play_animation .title {
+#banner.show .title {
   background-position: 0px bottom;
 }
 /* line 387, ../sass/screen.scss */
-.pre.sec6.show section article:nth-child(7) #banner.play_animation .text {
+#banner.show .text {
   opacity: 1;
 }
 /* line 390, ../sass/screen.scss */
-.pre.sec6.show section article:nth-child(7) #banner.play_animation .logo2 {
+#banner.show .logo2 {
   opacity: 1;
 }
 </style>
@@ -498,3 +511,233 @@ To connect html access as less as possible, assemble each image kind.
   <div class="blue_line"></div>
 </div>
 
+### Add image moving up (Set up the position to the bottom)
+
+**HTML**
+
+{% highlight html %}
+<div id="banner">
+  <div class="logo1"></div>
+  <div class="red_line"></div>
+  <div class="blue_line"></div>
+  <div class="guy1"></div>
+</div>
+{% endhighlight %}
+
+**CSS**
+
+{% highlight css %}
+.guy1{
+  margin-left:107px;
+  width:193px;
+  height:250px;
+  overflow:hidden;
+  background:url('guy.jpg') left -380px;
+}
+{% endhighlight %}
+
+![image](http://ne-zu.com/work/crd/CSSAnimation/assets/banner/imgs/guide/guy1.png)
+
+<div id="banner">
+  <div class="logo1"></div>
+  <div class="red_line"></div>
+  <div class="blue_line"></div>
+  <div class="guy1"></div>
+</div>
+
+### Add image for next scene
+
+**HTML**
+
+{% highlight html %}
+<div id="banner">
+  <div class="logo1"></div>
+  <div class="red_line"></div>
+  <div class="blue_line"></div>
+  <div class="guy1"></div>
+  <div class="guy2"></div>
+</div>
+{% endhighlight %}
+
+**CSS**
+
+{% highlight css %}
+.guy2{
+  width:300px;
+  height:250px;
+  background:black url('guy.jpg') left -630px;
+}
+{% endhighlight %}
+
+<div id="banner" class="def">
+  <div class="logo1"></div>
+  <div class="red_line"></div>
+  <div class="blue_line"></div>
+  <div class="guy1"></div>
+  <div class="guy2"></div>
+</div>
+
+### Add another assets for next scene (title, text and logo)
+
+{% highlight html %}
+<div id="banner">
+  <div class="logo1"></div>
+  <div class="red_line"></div>
+  <div class="blue_line"></div>
+  <div class="guy1"></div>
+  <div class="guy2"></div>
+  <div class="title"></div>
+  <div class="text"></div>
+  <div class="logo2"></div>
+</div>
+{% endhighlight %}
+
+**CSS**
+
+{% highlight css %}
+.title{
+  margin-left:151px;
+  margin-top:20px;
+  width:149px;
+  height:81px;
+  /*will be reviced this background at next step
+    due to the initial position*/
+  background:url('sprite.png') left bottom;
+}
+.text{
+  margin-left:153px;
+  margin-top:115px;
+  width:136px;
+  height:28px;
+  background:url('sprite.png') left -180px;
+}
+.logo2{
+  margin-left:185px;
+  margin-top:179px;
+  width:101px;
+  height:40px;
+  background:url('sprite.png') left -140px;
+}
+{% endhighlight %}
+
+<div id="banner" class="def">
+  <div class="logo1"></div>
+  <div class="red_line"></div>
+  <div class="blue_line"></div>
+  <div class="guy1"></div>
+  <div class="guy2"></div>
+  <div class="title"></div>
+  <div class="text"></div>
+  <div class="logo2"></div>
+</div>
+
+### Set up initial attributes of elements for last scene
+
+**CSS**
+
+{% highlight css %}
+.guy2{
+  opacity:0;
+}
+.title{
+  /*revice this*/
+  background:url('sprite.png') 150px bottom;
+}
+.text{
+  opacity:0;
+}
+.logo2{
+  opacity:0;
+}
+{% endhighlight %}
+
+![image](http://ne-zu.com/work/crd/CSSAnimation/assets/banner/imgs/guide/last.png)
+
+<div id="banner">
+  <div class="logo1"></div>
+  <div class="red_line"></div>
+  <div class="blue_line"></div>
+  <div class="guy1"></div>
+  <div class="guy2"></div>
+  <div class="title"></div>
+  <div class="text"></div>
+  <div class="logo2"></div>
+</div>
+
+### Set up transition information
+
+**CSS**
+
+{% highlight css %}
+.guy1{
+  /*moves from bottom to top*/
+  -webkit-transition:all 3s ease-in-out;
+}
+.guy2{
+  /*fades in 3.5sec after 
+    the first image finishes the animation*/
+  -webkit-transition:all 0.8s ease 3.5s;
+}
+.title{
+  /*slides from right to left 4s later*/
+  -webkit-transition:all 0.8s ease-in-out 4s;
+}
+.text{
+  /*fade in 5.5s later*/
+  -webkit-transition:all 0.8s ease 5.5s;
+}
+.logo2{
+  /*fade in 6.2s later*/
+  -webkit-transition:all 0.8s ease 6.2s;
+}
+{% endhighlight %}
+
+### Set up to start the entire animation
+
+**CSS**
+
+{% highlight css %}
+#banner.show .guy1{
+  background-position:left top;
+}
+#banner.show .guy2{
+  opacity:1;
+}
+#banner.show .title{
+  background-position:left bottom;
+}
+#banner.show .text{
+  opacity:1;
+}
+#banner.show .logo2{
+  opacity:1;
+}
+{% endhighlight %}
+
+**Javascript**
+
+{% highlight js %}
+var elment = document.getElementById('banner');
+elment.className = 'show';
+{% endhighlight %}
+
+<script type="text/javascript">
+	alert( 'v2' );
+	function playAnimation( )
+	{
+		$( 'body' ).find( '#banner' ).last( ).toggleClass( 'show' );
+	}
+</script>
+
+[Click here to call the javascript](javascript:playAnimation())
+
+<div id="banner">
+  <div class="logo1"></div>
+  <div class="red_line"></div>
+  <div class="blue_line"></div>
+  <div class="guy1"></div>
+  <div class="guy2"></div>
+  <div class="title"></div>
+  <div class="text"></div>
+  <div class="logo2"></div>
+</div>
