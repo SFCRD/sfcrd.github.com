@@ -2,6 +2,8 @@
 layout: post
 title: "CSS Animation"
 excerpt: "An introduction to rich animation in pure CSS3."
+authors:
+  - Mayo Tobita
 
 ---
 

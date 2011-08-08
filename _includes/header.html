@@ -36,9 +36,11 @@
 					<td>
 						{{ post.date | date: '%A, %B %d, %Y' }}
 					</td>
+					<!--
 					<td>
-						Authors
+						{{ post.authors | array_to_sentence_string }}
 					</td>
+					-->
 				</tr>
 				{% endfor %}
 			</tbody>

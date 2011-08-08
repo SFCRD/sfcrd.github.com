@@ -1,8 +1,12 @@
 ---
 layout: post
 published: false
+authors:
+  - Jon Cipriano
+  - Jeremy Ruppel
 
 ---
+
 Building Stateful HTML Applications
 ===================================
 

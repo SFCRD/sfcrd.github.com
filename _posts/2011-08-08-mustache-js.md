@@ -2,6 +2,8 @@
 layout: post
 title: "mustache.js"
 excerpt: "Logic-less templates for JavaScript."
+authors:
+  - Jeremy Ruppel
 
 ---
 
@@ -266,7 +268,7 @@ Many times, you can take the service result verbatim and hand it off to your tem
 
 This full example retrieves information about SFCRD from GitHub, templates it, and inserts it into the DOM:
 
-{% highlight html %}
+{% highlight html linenos %}
 <!-- include icanhaz.js, which includes mustache.js -->
 <script src="/javascripts/icanhaz.js" charset="utf-8"></script>
 

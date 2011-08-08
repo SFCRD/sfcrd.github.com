@@ -2,6 +2,9 @@
 layout: post
 title: "Case Study: Club Wedd 101 Things"
 excerpt: "http://apps.facebook.com/targetclubwedd/"
+authors:
+  - Jon Cipriano
+  - Jeremy Ruppel
 
 ---
 
