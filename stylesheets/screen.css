@@ -316,6 +316,7 @@ code {
 pre > code {
   background: transparent;
   border: none;
+  padding: 0;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -o-box-shadow: none;
