@@ -268,7 +268,7 @@ Many times, you can take the service result verbatim and hand it off to your tem
 
 This full example retrieves information about SFCRD from GitHub, templates it, and inserts it into the DOM:
 
-{% highlight html linenos %}
+{% highlight html %}
 <!-- include icanhaz.js, which includes mustache.js -->
 <script src="/javascripts/icanhaz.js" charset="utf-8"></script>
 
