@@ -11,9 +11,7 @@ authors:
 
 ![Xzibit](/images/xzibit.png)
 
-How to TextMate like a real baller.
-
-[TextMate](http://macromates.com/)
+How to [TextMate](http://macromates.com/) like a real baller.
 
 ## Yo dawg, I herd you like coding...
 
@@ -63,7 +61,7 @@ This is not only super helpful in keeping your scripts error-free, but is invalu
 
 #### Dependencies:
 
-- *node.js*: `brew install node`
+- **node.js**: `brew install node`
 
 #### Installation:
 
@@ -79,6 +77,124 @@ This is not only super helpful in keeping your scripts error-free, but is invalu
 
 - In the warnings window that pops up, click on a warning and your cursor will be placed at the offending character in your script.
 
+### Sparkup
+
+![Sparkup](/images/sparkup.png)
+
+[Sparkup](https://github.com/rstacruz/sparkup) is an awesome syntax for writing HTML [hella fast](http://www.youtube.com/watch?v=Jw3jipcenKc) using CSS selectors.
+
+#### Dependencies:
+
+- **python** (comes installed with Mac OSX)
+
+#### Installation:
+
+- Download the latest version from the project's [downloads section](https://github.com/rstacruz/sparkup/downloads) and unpack it.
+
+- Double-click the bundle to install it.
+
+#### Usage:
+
+- In almost any context, write your **Sparkup** line, then hit **&#x2324;E** (Control-E) to expand it into HTML.
+
+- All regular tags are expanded automatically, some with options:
+
+  `h1` &#x279C; `<h1></h1>`
+
+- You can insert text into the node with **brackets ({})**:
+
+  `h1{Sup, Sparkup!}` &#x279C; `<h1>Sup, Sparkup?</h1>`
+
+- A **dot (.)** denotes a class name:
+
+  `h1.yellow` &#x279C; `<h1 class="yellow"></h1>`
+
+- A **hash (#)** denotes an id:
+
+  `h1#header` &#x279C; `<h1 id="header"></h1>`
+
+- You can **combine** classes and id's:
+
+  `h1#header.yellow.big` &#x279C; `<h1 class="yellow big" id="header"></h1>`
+
+- If you don't specify the tag name, you get a **div** by default:
+
+  `.item` &#x279C; `<div class="item"></div>`
+
+- Create sibling nodes with a **plus (+)**:
+
+  `h1{Sup} + h2{Sparkup?}` &#x279C; `<h1>Sup</h1><h2>Sparkup?</h2>`
+
+- Create child nodes with a **carrot (>)**:
+
+  `ul > li{Lists!}` &#x279C; `<ul><li>Lists!</li></ul>`
+
+- Multiply an item with a **splat (*)**:
+
+  `ul > li{Lists!} * 4` &#x279C; `<ul><li>Lists!</li><li>Lists!</li><li>Lists!</li><li>Lists!</li></ul>`
+
+### AlignText
+
+![Aligntext](/images/aligntext.png)
+
+[AlignText](http://gcao.posterous.com/aligntexttmbundle) is an awesome bundle that provides one command for aligning your text vertically.
+
+#### Dependencies:
+
+- None!
+
+#### Installation:
+
+- `git clone https://github.com/gcao/AlignText.tmbundle.git`
+
+- Double-click the bundle to install.
+
+#### Usage:
+
+- By default, the Align Text command is bound to **&#x2324;&#x2325;&#x2318;]** (Control-Option-Command-]).
+
+- In any context, select some text you want to align and use that key command.
+
+- You will be prompted for the character to align on. For example, if I have the code:
+
+  {% highlight js %}
+  ( function( )
+  {
+    $.ajax(
+      {
+        url: 'http://gcao.posterous.com/aligntexttmbundle',
+        dataType  : 'text',
+        type : 'GET',
+        mySuperLongSuccessHandler : function( response )
+        {
+          alert( "Dope!" );
+        }
+      } );
+  } )( jQuery );
+  {% endhighlight %}
+  
+  ... and I select the middle section and align on **colon (:)**, I get:
+  
+  {% highlight js %}
+  ( function( )
+  {
+    $.ajax(
+      {
+        url                       : 'http://gcao.posterous.com/aligntexttmbundle',
+        dataType                  : 'text',
+        type                      : 'GET',
+        mySuperLongSuccessHandler : function( response )
+        {
+          alert( "Dope!" );
+        }
+      } );
+  } )( jQuery );
+  {% endhighlight %}
+
+  ... which is a **LOT** easier to read!
+
+- If you ever want to align on more than one character, enter them both separated by **three spaces**.
+
 ## Plugins
 
 Much like **Bundles**, you can install TextMate **Plugins** simply by double-clicking them. **Plugins** alter the editor itself and can add additional windows, commands, and the like.
@@ -93,9 +209,9 @@ Enter [AckMate](https://github.com/protocool/ackmate), a super-slick plugin to p
 
 #### Dependencies:
 
-- *ragel*: `brew install ragel`
+- **ragel**: `brew install ragel`
 
-- *ack*: `brew install ack`
+- **ack**: `brew install ack`
 
 #### Installation:
 
@@ -113,12 +229,14 @@ Enter [AckMate](https://github.com/protocool/ackmate), a super-slick plugin to p
 
 ## Tips & Tricks
 
-**TODO:**
+**TextMate** is endlessly extensible. You can write your own commands in any language you'd like (bash, ruby, python, javascript, even PHP). You can also write your own snippets for any context.
 
-- TextMate droplets
+Here are some other tips and tricks for getting the most out of your editor.
 
-- Sparkup
+### Color Picker in CSS context
 
-- CSS Navigator
+![Colorpicker](/images/colorpicker.png)
 
-- Align Text
+When you're writing CSS and you want your colors to be exact, you can't beat a color picker.
+
+Hit **&#x21E7;&#x2318;C** (Shift-Command-C) to bring it up, then use the **magnifying glass** to pick up colors right out of your comps!
