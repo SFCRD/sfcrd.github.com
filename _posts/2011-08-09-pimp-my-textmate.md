@@ -9,11 +9,13 @@ authors:
 
 # Pimp My TextMate
 
+![Xzibit](/images/xzibit.png)
+
 How to TextMate like a real baller.
 
 [TextMate](http://macromates.com/)
 
-## 'Sup TextMate?
+## Yo dawg, I herd you like coding...
 
 **TextMate** is the editor of choice for many Mac developers, from ruby to javascript and beyond.
 
@@ -114,8 +116,6 @@ Enter [AckMate](https://github.com/protocool/ackmate), a super-slick plugin to p
 **TODO:**
 
 - TextMate droplets
-
-- AckMate
 
 - Sparkup
 

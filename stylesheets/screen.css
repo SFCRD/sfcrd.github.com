@@ -257,28 +257,43 @@ article[role='post'] {
   text-shadow: #262b32 0 1px 3px;
 }
 /* line 9, ../_sass/styles/_post.sass */
+article[role='post'] h1, article[role='post'] h2, article[role='post'] h3, article[role='post'] h4, article[role='post'] h5, article[role='post'] h6 {
+  font-weight: bold;
+}
+/* line 12, ../_sass/styles/_post.sass */
 article[role='post'] h1 {
   font-size: 144px;
-  font-weight: bold;
   margin-left: -10px;
 }
-/* line 14, ../_sass/styles/_post.sass */
+/* line 16, ../_sass/styles/_post.sass */
 article[role='post'] h2, article[role='post'] h3, article[role='post'] h4, article[role='post'] h5, article[role='post'] h6 {
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: bold;
   margin-top: 25px;
   margin-bottom: 10px;
 }
+/* line 20, ../_sass/styles/_post.sass */
+article[role='post'] h2 {
+  font-size: 25px;
+  line-height: 30px;
+}
+/* line 24, ../_sass/styles/_post.sass */
+article[role='post'] h3 {
+  font-size: 21px;
+  line-height: 27px;
+}
 /* line 28, ../_sass/styles/_post.sass */
+article[role='post'] h4, article[role='post'] h5, article[role='post'] h6 {
+  font-size: 18px;
+  line-height: 25px;
+}
+/* line 39, ../_sass/styles/_post.sass */
 article[role='post'] ul li, article[role='post'] p {
   line-height: 25px;
 }
-/* line 31, ../_sass/styles/_post.sass */
+/* line 42, ../_sass/styles/_post.sass */
 article[role='post'] ul {
   list-style: disc;
 }
-/* line 34, ../_sass/styles/_post.sass */
+/* line 45, ../_sass/styles/_post.sass */
 article[role='post'] a {
   color: #c7f464;
 }
