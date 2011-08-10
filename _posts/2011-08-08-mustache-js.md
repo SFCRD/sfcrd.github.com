@@ -290,7 +290,7 @@ This full example retrieves information about SFCRD from GitHub, templates it, a
     {
       $( '#sfcrd' ).append( ich.github( response ) );
     },
-    'json' );
+    'jsonp' );
   } );
 </script>
 
@@ -314,7 +314,7 @@ This full example retrieves information about SFCRD from GitHub, templates it, a
     {
       $( '#sfcrd' ).append( ich.github( response ) );
     },
-    'json' );
+    'jsonp' );
   } );
 </script>
 <div id="sfcrd"></div>
