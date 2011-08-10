@@ -101,7 +101,7 @@ This is not only super helpful in keeping your scripts error-free, but is invalu
 
   `h1` &#x279C; `<h1></h1>`
 
-- You can insert text into the node with **brackets ({})**:
+- You can insert text into the node with **curly braces ({})**:
 
   `h1{Sup, Sparkup!}` &#x279C; `<h1>Sup, Sparkup?</h1>`
 
