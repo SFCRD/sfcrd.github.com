@@ -151,7 +151,7 @@ The value of 'conditional' was truthy!
 {{'{{/prop'}}}}
 {% endhighlight %}
 
-Likewise, use a **carrot (^)** to only render something if that value is falsy.
+Likewise, use a **caret (^)** to only render something if that value is falsy.
 
 {% highlight html %}
 <script type="text/javascript">
