@@ -288,7 +288,7 @@ This full example retrieves information about SFCRD from GitHub, templates it, a
   {
     $.get( 'https://api.github.com/users/sfcrd', function( response )
     {
-      $( '#sfcrd' ).append( ich.github( response ) );
+      $( '#sfcrd' ).append( ich.github( response.data ) );
     },
     'jsonp' );
   } );
@@ -312,7 +312,7 @@ This full example retrieves information about SFCRD from GitHub, templates it, a
   {
     $.get( 'https://api.github.com/users/sfcrd', function( response )
     {
-      $( '#sfcrd' ).append( ich.github( response ) );
+      $( '#sfcrd' ).append( ich.github( response.data ) );
     },
     'jsonp' );
   } );
