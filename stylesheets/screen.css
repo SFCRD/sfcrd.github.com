@@ -343,6 +343,54 @@ pre > code {
   box-shadow: none;
 }
 
+/* line 22, ../_sass/styles/_highlight.sass */
+pre {
+  overflow: auto;
+}
+
+/* line 25, ../_sass/styles/_highlight.sass */
+pre::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* line 29, ../_sass/styles/_highlight.sass */
+pre::-webkit-scrollbar-track, pre::-webkit-scrollbar-track-piece {
+  background-color: #14171b;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* line 33, ../_sass/styles/_highlight.sass */
+pre::-webkit-scrollbar-thumb {
+  background-color: #262b32;
+  border: 2px solid #14171b;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* line 1, ../_sass/styles/_slides.sass */
+article[role='post'].slides {
+  font-size: 40px;
+}
+/* line 5, ../_sass/styles/_slides.sass */
+article[role='post'].slides p {
+  line-height: 56px;
+}
+/* line 8, ../_sass/styles/_slides.sass */
+article[role='post'].slides h1, article[role='post'].slides h2, article[role='post'].slides h3 {
+  font-size: 144px;
+  line-height: 170px;
+}
+
 /* line 1, ../_sass/pygments/_monokai.sass */
 .hll {
   background-color: #49483e;

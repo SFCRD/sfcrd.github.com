@@ -18,3 +18,19 @@ pre > code
   border: none
   padding: 0
   @include box-shadow( none )
+
+pre
+  overflow: auto
+  
+pre::-webkit-scrollbar
+  width: 8px
+  height: 8px
+
+pre::-webkit-scrollbar-track, pre::-webkit-scrollbar-track-piece
+  background-color: darken( $dark, 8% )
+  @include border-radius( 8px )
+  
+pre::-webkit-scrollbar-thumb
+  background-color: $dark
+  border: 2px solid darken( $dark, 8% )
+  @include border-radius( 8px )
