@@ -195,6 +195,20 @@ This is not only super helpful in keeping your scripts error-free, but is invalu
 
 - If you ever want to align on more than one character, enter them both separated by **three spaces**.
 
+### Other Bundles
+
+There are plenty of other bundles out there that don't require much explanation. Here are some of the best:
+
+- [ActionScript 3](https://github.com/simongregory/actionscript3-tmbundle) Bundle
+
+- [Ruby on Rails](https://github.com/drnic/ruby-on-rails-tmbundle) Bundle
+
+- [SASS](https://github.com/seaofclouds/sass-textmate-bundle) Bundle
+
+- [HAML](https://github.com/flov/HAML-TextMate-Bundle) Bundle
+
+- [Cucumber](https://github.com/cucumber/cucumber-tmbundle) Bundle
+
 ## Plugins
 
 Much like **Bundles**, you can install TextMate **Plugins** simply by double-clicking them. **Plugins** alter the editor itself and can add additional windows, commands, and the like.
@@ -227,6 +241,20 @@ Enter [AckMate](https://github.com/protocool/ackmate), a super-slick plugin to p
 
 - Part of what makes `ack` so fast is that it can filter your search by *file type*. Use the **options** box to limit your search, or just use the tag **text** to search all text-based documents in your project.
 
+### ProjectPlus
+
+#### Dependencies:
+
+**None!**
+
+#### Installation:
+
+- Read the blog post by Ciaran Walsh [here](http://ciaranwal.sh/2008/08/05/textmate-plug-in-projectplus).
+
+#### Usage:
+
+- Installing the **ProjectPlus** plugin gives you SCM badges in your project drawer, among several other neat tweaks. 
+
 ## Tips & Tricks
 
 **TextMate** is endlessly extensible. You can write your own commands in any language you'd like (bash, ruby, python, javascript, even PHP). You can also write your own snippets for any context.
@@ -240,3 +268,16 @@ Here are some other tips and tricks for getting the most out of your editor.
 When you're writing CSS and you want your colors to be exact, you can't beat a color picker.
 
 Hit **&#x21E7;&#x2318;C** (Shift-Command-C) to bring it up, then use the **magnifying glass** to pick up colors right out of your comps!
+
+### Quick Search
+
+A little-known command for *Find in Document*, better than **&#x2318;F**, is **&#x2324;S** (Control-S). Hit that combo to pop open a small text field at the bottom of your window. Begin typing there and your entry will highlight in the document. Hit the combo again to move to the next 
+occurrence of your entry.
+
+### Spell-Check
+
+Hit **&#x2318;:** (Command-:) to cycle through possibly misspelled words in your document. Then, hit **&#x2318;&#x2325;:** (Command-Shift-:) to bring up a dictionary control.
+
+### Open Terminal to your project directory
+
+Highlight a file in your project drawer and hit **&#x2324;&#x2325;O** (Control-Shift-O) to open a new Terminal window, located where your selected file lives.
