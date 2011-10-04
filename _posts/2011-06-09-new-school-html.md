@@ -1,11 +1,11 @@
----
+--- 
 layout: post
-title: "New-School HTML"
-excerpt: "Introduce new-school HTML to people and make it approachable."
-authors:
-  - Jon Cipriano
-  - Jeremy Ruppel
-  
+title: New-School HTML
+excerpt: Introduce new-school HTML to people and make it approachable.
+authors: 
+- name: Jeremy Ruppel
+  email: jeremy.ruppel@gmail.com
+
 ---
 
 # New-School HTML

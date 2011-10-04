@@ -1,9 +1,10 @@
----
+--- 
 layout: post
-title: "mustache.js"
-excerpt: "Logic-less templates for JavaScript."
-authors:
-  - Jeremy Ruppel
+title: mustache.js
+excerpt: Logic-less templates for JavaScript.
+authors: 
+- name: Jeremy Ruppel
+  email: jeremy.ruppel@gmail.com
 
 ---
 

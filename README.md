@@ -23,7 +23,9 @@ Once you push changes to master, github will rebuild the site automatically. Pre
 Todos
 -----
 
-- Add in Disqus comments to each post
+- Add in Disqus comments to each post.
+
+- Find a way to attach authors/contributors to each post. This would be the shiz and would help people find a good point of contact about any topic.
 
 - Come up with a better name for the site? 'CRD Talks' kinda blows...
 

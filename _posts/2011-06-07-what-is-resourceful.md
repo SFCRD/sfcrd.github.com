@@ -1,9 +1,10 @@
----
+--- 
 layout: post
-title: "What is Resourceful?"
-excerpt: "A whirlwind tour of resourcefulness in Rails."
-authors:
-  - Jeremy Ruppel
+title: What is Resourceful?
+excerpt: A whirlwind tour of resourcefulness in Rails.
+authors: 
+- name: Jeremy Ruppel
+  email: jeremy.ruppel@gmail.com
 
 ---
 

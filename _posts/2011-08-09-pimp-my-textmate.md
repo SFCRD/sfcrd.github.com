@@ -1,17 +1,18 @@
----
+--- 
 layout: post
-title: "Pimp My TextMate"
-excerpt: "How to TextMate like a real baller."
-authors:
-  - Jeremy Ruppel
+title: Pimp My TextMate
+excerpt: How to TextMate like a real baller.
+authors: 
+- name: Jeremy Ruppel
+  email: jeremy.ruppel@gmail.com
 
 ---
 
 # Pimp My TextMate
 
-![Xzibit](/images/xzibit.png)
-
 How to [TextMate](http://macromates.com/) like a real baller.
+
+![Xzibit](/images/xzibit.png)
 
 ## Yo dawg, I herd you like coding...
 
