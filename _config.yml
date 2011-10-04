@@ -4,4 +4,4 @@ pygments: true
 exclude: 
   - config.rb
   - Rakefile
-  
+  - _technologies.yml

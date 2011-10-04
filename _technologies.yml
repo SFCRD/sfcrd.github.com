@@ -1,0 +1,52 @@
+- languages:
+  - coffeescript
+  - rake
+  - ruby
+  - yaml
+  - markdown
+  
+- programming:
+  - terminal/bash
+  - bundler/gem authoring
+  - AOP
+  
+- testing:
+  - jasmine
+  - cucumber
+  - rspec
+  - shoulda
+  
+- flash:
+  - robotlegs
+  - flex
+  
+- css:
+  - SASS
+  - compass
+  - less
+  
+- javascript:
+  - underscore
+  - sammy
+  - batman
+  - zepto
+  - ender
+  
+- ruby:
+  - rmagick
+  - rubygems
+  - jekyll
+  
+- rails:
+  - activesupport
+  - actionview
+  - jammit
+  - formtastic
+  - rabl
+  - fabrication
+  
+- node:
+  - node.js
+  - connect
+  - express
+  - npm
