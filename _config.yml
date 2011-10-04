@@ -1,8 +1,10 @@
-markdown: kramdown
+markdown: maruku
 pygments: true
 
 exclude: 
   - config.rb
   - Rakefile
+  - Gemfile
+  - Gemfile.lock
   - _technologies.yml
   - README.md

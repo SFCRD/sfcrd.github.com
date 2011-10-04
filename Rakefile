@@ -1,3 +1,5 @@
+require 'bundler'
+Bundler.require
 
 desc "Run the jekyll server"
 task :jekyll => :frontmatter do
@@ -9,13 +11,7 @@ task :frontmatter do
   Dir[ '_posts/*.md' ].each { |post| Post.new( post ).update! }
 end
 
-class Post
-  require 'rubygems'
-  require 'git'
-  require 'yaml'
-  require 'markdown'
-  require 'nokogiri'
-  
+class Post  
   LAYOUT = /^(?:---.*---)?(.*)$/imx
   
   def initialize( filename )
@@ -28,7 +24,7 @@ class Post
     @body ||= file[ LAYOUT, 1 ]
   end
   def markup
-    @markup ||= Markdown.new( body ).to_html
+    @markup ||= RDiscount.new( body ).to_html
   end
   def layout
     'post'
