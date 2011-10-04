@@ -320,19 +320,20 @@ pre, code {
   background: #262b32;
   margin: 10px 0;
   white-space: pre;
+  line-height: 16px;
 }
 
-/* line 10, ../_sass/styles/_highlight.sass */
+/* line 11, ../_sass/styles/_highlight.sass */
 pre {
   padding: 5px 10px;
 }
 
-/* line 13, ../_sass/styles/_highlight.sass */
+/* line 14, ../_sass/styles/_highlight.sass */
 code {
   padding: 2px 5px;
 }
 
-/* line 16, ../_sass/styles/_highlight.sass */
+/* line 17, ../_sass/styles/_highlight.sass */
 pre > code {
   background: transparent;
   border: none;
@@ -343,18 +344,18 @@ pre > code {
   box-shadow: none;
 }
 
-/* line 22, ../_sass/styles/_highlight.sass */
+/* line 23, ../_sass/styles/_highlight.sass */
 pre {
   overflow: auto;
 }
 
-/* line 25, ../_sass/styles/_highlight.sass */
+/* line 26, ../_sass/styles/_highlight.sass */
 pre::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
-/* line 29, ../_sass/styles/_highlight.sass */
+/* line 30, ../_sass/styles/_highlight.sass */
 pre::-webkit-scrollbar-track, pre::-webkit-scrollbar-track-piece {
   background-color: #14171b;
   -moz-border-radius: 8px;
@@ -365,7 +366,7 @@ pre::-webkit-scrollbar-track, pre::-webkit-scrollbar-track-piece {
   border-radius: 8px;
 }
 
-/* line 33, ../_sass/styles/_highlight.sass */
+/* line 34, ../_sass/styles/_highlight.sass */
 pre::-webkit-scrollbar-thumb {
   background-color: #262b32;
   border: 2px solid #14171b;
@@ -635,3 +636,13 @@ article[role='post'].slides h1, article[role='post'].slides h2, article[role='po
 }
 
 /* Literal.Number.Integer.Long */
+/* Bash Session */
+/* line 208, ../_sass/pygments/_monokai.sass */
+.gp {
+  color: #4ecdc4;
+}
+
+/* line 210, ../_sass/pygments/_monokai.sass */
+.go {
+  color: #b6b6b6;
+}
