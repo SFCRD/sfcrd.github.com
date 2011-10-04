@@ -5,3 +5,4 @@ exclude:
   - config.rb
   - Rakefile
   - _technologies.yml
+  - README.md
