@@ -11,6 +11,39 @@ task :frontmatter do
   Dir[ '_posts/*.md' ].each { |post| Post.new( post ).update! }
 end
 
+desc "Create a new post"
+task :post do
+  require 'date'
+  post = shell.ask 'Post title: '
+  date = DateTime.now.strftime '%Y-%m-%d'
+  File.open "_posts/#{param post, date}.md", 'w+' do |f|
+    d = <<EOS
+---
+
+* No frontmatter yet. After committing your post, run *rake frontmatter* to generate this section.
+
+---
+
+# #{post}
+
+A short description about the post goes here.
+
+## New Section
+
+Some more text. Happy posting!
+EOS
+    f << d
+  end
+end
+
+def param( post, date )
+  "#{date} #{post.downcase}".gsub( /\W+/, '-' ).gsub( /^\W|\W$/, '' )
+end
+
+def shell
+  @shell ||= HighLine.new
+end
+
 class Post  
   LAYOUT = /^(?:---.*---)?(.*)$/imx
   
