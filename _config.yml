@@ -1,4 +1,4 @@
-markdown: maruku
+markdown: kramdown
 pygments: true
 
 exclude: 
