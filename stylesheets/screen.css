@@ -357,7 +357,6 @@ pre::-webkit-scrollbar {
 
 /* line 30, ../_sass/styles/_highlight.sass */
 pre::-webkit-scrollbar-track, pre::-webkit-scrollbar-track-piece {
-  background-color: #14171b;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   -o-border-radius: 8px;
@@ -368,8 +367,7 @@ pre::-webkit-scrollbar-track, pre::-webkit-scrollbar-track-piece {
 
 /* line 34, ../_sass/styles/_highlight.sass */
 pre::-webkit-scrollbar-thumb {
-  background-color: #262b32;
-  border: 2px solid #14171b;
+  background-color: #14171b;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   -o-border-radius: 8px;

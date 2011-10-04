@@ -28,10 +28,11 @@ pre::-webkit-scrollbar
   height: 8px
 
 pre::-webkit-scrollbar-track, pre::-webkit-scrollbar-track-piece
-  background-color: darken( $dark, 8% )
+  // background-color: darken( $dark, 8% )
   @include border-radius( 8px )
   
 pre::-webkit-scrollbar-thumb
-  background-color: $dark
-  border: 2px solid darken( $dark, 8% )
+  background-color: darken( $dark, 8% )
+  // background-color: $dark
+  // border: 2px solid darken( $dark, 8% )
   @include border-radius( 8px )
