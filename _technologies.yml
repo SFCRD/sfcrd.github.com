@@ -9,6 +9,8 @@
   - terminal/bash
   - bundler/gem authoring
   - AOP
+  - github
+  - git style
   
 - testing:
   - jasmine
