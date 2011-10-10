@@ -16,7 +16,8 @@ task :post do
   require 'date'
   post = shell.ask 'Post title: '
   date = DateTime.now.strftime '%Y-%m-%d'
-  File.open "_posts/#{param post, date}.md", 'w+' do |f|
+  file = "_posts/#{param post, date}.md"
+  File.open file, 'w+' do |f|
     d = <<EOS
 ---
 
@@ -34,6 +35,7 @@ Some more text. Happy posting!
 EOS
     f << d
   end
+  sh "mate #{file}"
 end
 
 def param( post, date )
