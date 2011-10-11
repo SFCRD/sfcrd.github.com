@@ -3,6 +3,8 @@ layout: post
 title: "Case Study: Target Weekly Ad"
 excerpt: A short description about the post goes here.
 authors: 
+- name: Kyle Beikirch
+  email: kyle.beikirch@gmail.com
 - name: Jeremy Ruppel
   email: jeremy.ruppel@gmail.com
 
