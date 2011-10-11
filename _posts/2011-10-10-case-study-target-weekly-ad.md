@@ -1,6 +1,10 @@
----
-
-* No frontmatter yet. After committing your post, run *rake frontmatter* to generate this section.
+--- 
+layout: post
+title: "Case Study: Target Weekly Ad"
+excerpt: A short description about the post goes here.
+authors: 
+- name: Jeremy Ruppel
+  email: jeremy.ruppel@gmail.com
 
 ---
 
@@ -23,3 +27,6 @@ Some more text. Happy posting!
 	- branching - continuing development on phase 2 but maintenance on 1 is a breeze
 	- pull requests - continual system of code review for any development that matters
 	- readme - perfect place for developer documentation
+- Pageview 
+  - hotspots -  [Raphael](http://raphaeljs.com/).
+  - scroller - [jQuery Tools](http://flowplayer.org/tools/scrollable/index.html).
