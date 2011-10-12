@@ -14,12 +14,9 @@ authors:
 
 A short description about the post goes here.
 
-## New Section
-
-Some more text. Happy posting!
 
 
-## Ideas
+## Technologies
 
 - [Jammit](http://documentcloud.github.com/jammit/) - asset groups, keep javascripts separated and page weight down
 - [Cucumber](http://cukes.info/) - automated acceptance testing, tied into jenkins so we know when the build breaks
