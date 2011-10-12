@@ -3,10 +3,10 @@ layout: post
 title: "Case Study: Target Weekly Ad"
 excerpt: A short description about the post goes here.
 authors: 
-- name: Jeremy Ruppel
-  email: jeremy.ruppel@gmail.com
 - name: Kyle Beikirch
   email: kyle.beikirch@gmail.com
+- name: Jeremy Ruppel
+  email: jeremy.ruppel@gmail.com
 
 ---
 
@@ -21,9 +21,9 @@ Some more text. Happy posting!
 
 ## Ideas
 
-- Jammit - asset groups, keep javascripts separated and page weight down
-- Cucumber - automated acceptance testing, tied into jenkins so we know when the build breaks
-- Haml/SASS/Mustache - just sayin, we use the newest hotness
+- [Jammit](http://documentcloud.github.com/jammit/) - asset groups, keep javascripts separated and page weight down
+- [Cucumber](http://cukes.info/) - automated acceptance testing, tied into jenkins so we know when the build breaks
+- [Haml](http://haml-lang.com/)/[SASS](http://sass-lang.com/)/[Mustache](http://mustache.github.com/) - just sayin, we use the newest hotness
 - Custom client-side persistence layer for Quick List - degrades gracefully all the way back to IE5.5
 - Git/GitHub (this is actually a huge one)
 	- branching - continuing development on phase 2 but maintenance on 1 is a breeze
@@ -32,7 +32,7 @@ Some more text. Happy posting!
 
 ### Libraries
 
-  - Hotspots -  [Raphael](http://raphaeljs.com/).
+  - [Raphael](http://raphaeljs.com/) - Hotspots  
   {% highlight js %}
   // creates a paper that is attached to the div with class "canvas" and then sets size.
   var paper = Raphael($('.canvas', 1200, 1500));
@@ -50,7 +50,7 @@ Some more text. Happy posting!
   });
   {% endhighlight %}
   
-  - Scroller - [jQuery Tools](http://flowplayer.org/tools/scrollable/index.html).
+  - [jQuery Tools](http://flowplayer.org/tools/scrollable/index.html) - Scroller
   
   HTML
   {% highlight html %}
